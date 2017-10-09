@@ -1,0 +1,8 @@
+
+State Machine - |AD_DA|ADC0832:u1|current_state
+Name current_state.Data_Output current_state.Data_Transform current_state.Second_DI_Receive current_state.First_DI_Receive current_state.Start_Order_Wait 
+current_state.Start_Order_Wait 0 0 0 0 0 
+current_state.First_DI_Receive 0 0 0 1 1 
+current_state.Second_DI_Receive 0 0 1 0 1 
+current_state.Data_Transform 0 1 0 0 1 
+current_state.Data_Output 1 0 0 0 1 
