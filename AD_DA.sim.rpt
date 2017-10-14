@@ -1,5 +1,5 @@
 Simulator report for AD_DA
-Mon Oct 09 17:22:24 2017
+Sat Oct 14 14:51:45 2017
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -38,20 +38,20 @@ applicable agreement for further details.
 
 
 
-+--------------------------------------------+
-; Simulator Summary                          ;
-+-----------------------------+--------------+
-; Type                        ; Value        ;
-+-----------------------------+--------------+
-; Simulation Start Time       ; 0 ps         ;
-; Simulation End Time         ; 2.0 ms       ;
-; Simulation Netlist Size     ; 219 nodes    ;
-; Simulation Coverage         ;      40.58 % ;
-; Total Number of Transitions ; 637          ;
-; Simulation Breakpoints      ; 0            ;
-; Family                      ; MAX II       ;
-; Device                      ; EPM570F256C3 ;
-+-----------------------------+--------------+
++---------------------------------------------+
+; Simulator Summary                           ;
++-----------------------------+---------------+
+; Type                        ; Value         ;
++-----------------------------+---------------+
+; Simulation Start Time       ; 0 ps          ;
+; Simulation End Time         ; 2.0 ms        ;
+; Simulation Netlist Size     ; 338 nodes     ;
+; Simulation Coverage         ;      28.45 %  ;
+; Total Number of Transitions ; 804           ;
+; Simulation Breakpoints      ; 0             ;
+; Family                      ; MAX II        ;
+; Device                      ; EPM1270F256C3 ;
++-----------------------------+---------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------+
@@ -95,13 +95,13 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      40.58 % ;
-; Total nodes checked                                 ; 219          ;
-; Total output ports checked                          ; 207          ;
-; Total output ports with complete 1/0-value coverage ; 84           ;
-; Total output ports with no 1/0-value coverage       ; 102          ;
-; Total output ports with no 1-value coverage         ; 109          ;
-; Total output ports with no 0-value coverage         ; 116          ;
+; Total coverage as a percentage                      ;      28.45 % ;
+; Total nodes checked                                 ; 338          ;
+; Total output ports checked                          ; 348          ;
+; Total output ports with complete 1/0-value coverage ; 99           ;
+; Total output ports with no 1/0-value coverage       ; 203          ;
+; Total output ports with no 1-value coverage         ; 232          ;
+; Total output ports with no 0-value coverage         ; 220          ;
 +-----------------------------------------------------+--------------+
 
 
@@ -111,60 +111,63 @@ The following table displays output ports that toggle between 1 and 0 during sim
 +---------------------------------------------------+---------------------------------------------------+------------------+
 ; Node Name                                         ; Output Port Name                                  ; Output Port Type ;
 +---------------------------------------------------+---------------------------------------------------+------------------+
+; |AD_DA|ADC0832:u1|current_state.First_DI_Receive  ; |AD_DA|ADC0832:u1|current_state.First_DI_Receive  ; regout           ;
+; |AD_DA|ADC0832:u1|current_state.Data_Transform    ; |AD_DA|ADC0832:u1|Selector1~0                     ; combout          ;
+; |AD_DA|ADC0832:u1|current_state.Data_Transform    ; |AD_DA|ADC0832:u1|current_state.Data_Transform    ; regout           ;
+; |AD_DA|ADC0832:u1|Selector0~0                     ; |AD_DA|ADC0832:u1|Selector0~0                     ; combout          ;
 ; |AD_DA|CLKNUM[1]~reg0                             ; |AD_DA|CLKNUM[1]~1                                ; cout0            ;
 ; |AD_DA|CLKNUM[1]~reg0                             ; |AD_DA|CLKNUM[1]~1COUT1_89                        ; cout1            ;
 ; |AD_DA|CLKNUM[2]~reg0                             ; |AD_DA|CLKNUM[2]~3                                ; cout0            ;
 ; |AD_DA|CLKNUM[2]~reg0                             ; |AD_DA|CLKNUM[2]~3COUT1_91                        ; cout1            ;
 ; |AD_DA|CLKNUM[3]~reg0                             ; |AD_DA|CLKNUM[3]~5                                ; cout0            ;
 ; |AD_DA|CLKNUM[3]~reg0                             ; |AD_DA|CLKNUM[3]~5COUT1_93                        ; cout1            ;
-; |AD_DA|DI_1~0                                     ; |AD_DA|DI_1~0                                     ; combout          ;
 ; |AD_DA|CLKNUM[4]~reg0                             ; |AD_DA|CLKNUM[4]~7                                ; cout0            ;
 ; |AD_DA|CLKNUM[4]~reg0                             ; |AD_DA|CLKNUM[4]~7COUT1_95                        ; cout1            ;
-; |AD_DA|DI_1~1                                     ; |AD_DA|DI_1~1                                     ; combout          ;
-; |AD_DA|DI_1~4                                     ; |AD_DA|DI_1~4                                     ; combout          ;
-; |AD_DA|DI_1~10                                    ; |AD_DA|DI_1~10                                    ; combout          ;
-; |AD_DA|ADC0832:u1|current_state.First_DI_Receive  ; |AD_DA|ADC0832:u1|current_state.First_DI_Receive  ; regout           ;
-; |AD_DA|ADC0832:u1|current_state.Data_Transform    ; |AD_DA|ADC0832:u1|Selector1~0                     ; combout          ;
-; |AD_DA|ADC0832:u1|current_state.Data_Transform    ; |AD_DA|ADC0832:u1|current_state.Data_Transform    ; regout           ;
-; |AD_DA|ADC0832:u1|Selector0~0                     ; |AD_DA|ADC0832:u1|Selector0~0                     ; combout          ;
+; |AD_DA|CLKNUM[5]~reg0                             ; |AD_DA|CLKNUM[5]~9                                ; cout             ;
 ; |AD_DA|ADC0832:u1|DO                              ; |AD_DA|ADC0832:u1|DO                              ; regout           ;
+; |AD_DA|DataA[0]                                   ; |AD_DA|DataA[0]                                   ; regout           ;
+; |AD_DA|DataA[1]                                   ; |AD_DA|DataA[1]                                   ; regout           ;
+; |AD_DA|DataB[3]                                   ; |AD_DA|DataB[3]                                   ; regout           ;
+; |AD_DA|DataB[4]                                   ; |AD_DA|DataB[4]                                   ; regout           ;
+; |AD_DA|DataB[5]                                   ; |AD_DA|DataB[5]                                   ; regout           ;
+; |AD_DA|DataB[6]                                   ; |AD_DA|DataB[6]                                   ; regout           ;
+; |AD_DA|DataB[7]                                   ; |AD_DA|DataB[7]                                   ; regout           ;
+; |AD_DA|DI_1~0                                     ; |AD_DA|DI_1~0                                     ; combout          ;
+; |AD_DA|DI_1~1                                     ; |AD_DA|DI_1~1                                     ; combout          ;
+; |AD_DA|ADC0832:u1|Mux8~0                          ; |AD_DA|ADC0832:u1|Mux8~0                          ; combout          ;
 ; |AD_DA|ADC0832:u1|output_index[0]                 ; |AD_DA|ADC0832:u1|output_index[0]                 ; regout           ;
 ; |AD_DA|ADC0832:u1|Mux8~1                          ; |AD_DA|ADC0832:u1|Mux8~1                          ; combout          ;
 ; |AD_DA|ADC0832:u1|Mux8~2                          ; |AD_DA|ADC0832:u1|Mux8~2                          ; combout          ;
 ; |AD_DA|ADC0832:u1|output_index[1]                 ; |AD_DA|ADC0832:u1|output_index[1]                 ; regout           ;
 ; |AD_DA|ADC0832:u1|Mux8~3                          ; |AD_DA|ADC0832:u1|Mux8~3                          ; combout          ;
-; |AD_DA|ADC0832:u1|Mux8~4                          ; |AD_DA|ADC0832:u1|Mux8~4                          ; combout          ;
 ; |AD_DA|ADC0832:u1|Mux8~5                          ; |AD_DA|ADC0832:u1|Mux8~5                          ; combout          ;
-; |AD_DA|ADC0832:u1|Mux8~6                          ; |AD_DA|ADC0832:u1|Mux8~6                          ; combout          ;
-; |AD_DA|ADC0832:u1|Add0~2                          ; |AD_DA|ADC0832:u1|Add0~2                          ; combout          ;
-; |AD_DA|ADC0832:u1|Add0~2                          ; |AD_DA|ADC0832:u1|Add0~4                          ; cout0            ;
-; |AD_DA|ADC0832:u1|Add0~2                          ; |AD_DA|ADC0832:u1|Add0~4COUT1_91                  ; cout1            ;
-; |AD_DA|ADC0832:u1|Add0~7                          ; |AD_DA|ADC0832:u1|Add0~7                          ; combout          ;
+; |AD_DA|COUNT[3]                                   ; |AD_DA|COUNT[3]~55                                ; cout0            ;
+; |AD_DA|COUNT[3]                                   ; |AD_DA|COUNT[3]~55COUT1_93                        ; cout1            ;
+; |AD_DA|DataA[0]~0                                 ; |AD_DA|DataA[0]~0                                 ; combout          ;
+; |AD_DA|COUNT[1]                                   ; |AD_DA|COUNT[1]~59                                ; cout0            ;
+; |AD_DA|COUNT[1]                                   ; |AD_DA|COUNT[1]~59COUT1_89                        ; cout1            ;
+; |AD_DA|COUNT[2]                                   ; |AD_DA|COUNT[2]~61                                ; cout0            ;
+; |AD_DA|COUNT[2]                                   ; |AD_DA|COUNT[2]~61COUT1_91                        ; cout1            ;
+; |AD_DA|Equal8~11                                  ; |AD_DA|Equal8~11                                  ; combout          ;
+; |AD_DA|Equal8~12                                  ; |AD_DA|Equal8~12                                  ; combout          ;
+; |AD_DA|Selector2~0                                ; |AD_DA|Selector2~0                                ; combout          ;
+; |AD_DA|DataB[0]~1                                 ; |AD_DA|DataB[0]~1                                 ; combout          ;
 ; |AD_DA|ADC0832:u1|Add0~8                          ; |AD_DA|ADC0832:u1|Add0~8                          ; combout          ;
 ; |AD_DA|ADC0832:u1|Add0~9                          ; |AD_DA|ADC0832:u1|Add0~9                          ; combout          ;
-; |AD_DA|ADC0832:u1|Add0~9                          ; |AD_DA|ADC0832:u1|Add0~11                         ; cout0            ;
-; |AD_DA|ADC0832:u1|Add0~9                          ; |AD_DA|ADC0832:u1|Add0~11COUT1_85                 ; cout1            ;
 ; |AD_DA|ADC0832:u1|Add0~14                         ; |AD_DA|ADC0832:u1|Add0~14                         ; combout          ;
 ; |AD_DA|ADC0832:u1|output_index[3]~0               ; |AD_DA|ADC0832:u1|output_index[3]~0               ; combout          ;
 ; |AD_DA|ADC0832:u1|Add0~16                         ; |AD_DA|ADC0832:u1|Add0~16                         ; combout          ;
 ; |AD_DA|ADC0832:u1|Add0~16                         ; |AD_DA|ADC0832:u1|Add0~18                         ; cout0            ;
 ; |AD_DA|ADC0832:u1|Add0~16                         ; |AD_DA|ADC0832:u1|Add0~18COUT1_83                 ; cout1            ;
-; |AD_DA|ADC0832:u1|Add0~21                         ; |AD_DA|ADC0832:u1|Add0~21                         ; combout          ;
-; |AD_DA|ADC0832:u1|Add0~22                         ; |AD_DA|ADC0832:u1|Add0~22                         ; combout          ;
-; |AD_DA|ADC0832:u1|Add0~23                         ; |AD_DA|ADC0832:u1|Add0~23                         ; combout          ;
-; |AD_DA|ADC0832:u1|Add0~23                         ; |AD_DA|ADC0832:u1|Add0~25                         ; cout0            ;
-; |AD_DA|ADC0832:u1|Add0~23                         ; |AD_DA|ADC0832:u1|Add0~25COUT1_87                 ; cout1            ;
-; |AD_DA|ADC0832:u1|Add0~28                         ; |AD_DA|ADC0832:u1|Add0~28                         ; combout          ;
-; |AD_DA|ADC0832:u1|Add0~30                         ; |AD_DA|ADC0832:u1|Add0~30                         ; combout          ;
-; |AD_DA|ADC0832:u1|Add0~30                         ; |AD_DA|ADC0832:u1|Add0~32                         ; cout0            ;
-; |AD_DA|ADC0832:u1|Add0~35                         ; |AD_DA|ADC0832:u1|Add0~35                         ; combout          ;
 ; |AD_DA|ADC0832:u1|Add0~37                         ; |AD_DA|ADC0832:u1|Add0~37                         ; combout          ;
-; |AD_DA|ADC0832:u1|Add0~42                         ; |AD_DA|ADC0832:u1|Add0~42                         ; combout          ;
-; |AD_DA|ADC0832:u1|Add0~44                         ; |AD_DA|ADC0832:u1|Add0~44                         ; combout          ;
-; |AD_DA|ADC0832:u1|Add0~44                         ; |AD_DA|ADC0832:u1|Add0~46                         ; cout             ;
-; |AD_DA|ADC0832:u1|Add0~49                         ; |AD_DA|ADC0832:u1|Add0~49                         ; combout          ;
+; |AD_DA|ADC0832:u1|Add0~51                         ; |AD_DA|ADC0832:u1|Add0~51                         ; combout          ;
+; |AD_DA|ADC0832:u1|Add0~51                         ; |AD_DA|ADC0832:u1|Add0~53                         ; cout0            ;
+; |AD_DA|ADC0832:u1|Add0~51                         ; |AD_DA|ADC0832:u1|Add0~53COUT1_81                 ; cout1            ;
 ; |AD_DA|ADC0832:u1|current_state.Second_DI_Receive ; |AD_DA|ADC0832:u1|output_order~0                  ; combout          ;
 ; |AD_DA|ADC0832:u1|current_state.Second_DI_Receive ; |AD_DA|ADC0832:u1|current_state.Second_DI_Receive ; regout           ;
+; |AD_DA|Selector2~1                                ; |AD_DA|Selector2~1                                ; combout          ;
+; |AD_DA|Selector2~2                                ; |AD_DA|Selector2~2                                ; combout          ;
+; |AD_DA|WideNor0~0                                 ; |AD_DA|WideNor0~0                                 ; combout          ;
 ; |AD_DA|ADC0832:u1|Add0~57                         ; |AD_DA|ADC0832:u1|Add0~57                         ; combout          ;
 ; |AD_DA|ADC0832:u1|Add0~58                         ; |AD_DA|ADC0832:u1|Add0~58                         ; combout          ;
 ; |AD_DA|ADC0832:u1|Add0~59                         ; |AD_DA|ADC0832:u1|Add0~59                         ; combout          ;
@@ -181,7 +184,10 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |AD_DA|ADC0832:u1|Add0~70                         ; |AD_DA|ADC0832:u1|Add0~70                         ; combout          ;
 ; |AD_DA|ADC0832:u1|Add0~71                         ; |AD_DA|ADC0832:u1|Add0~71                         ; combout          ;
 ; |AD_DA|ADC0832:u1|Add0~72                         ; |AD_DA|ADC0832:u1|Add0~72                         ; combout          ;
+; |AD_DA|DI_1                                       ; |AD_DA|DI_1                                       ; combout          ;
+; |AD_DA|receive_order                              ; |AD_DA|receive_order                              ; combout          ;
 ; |AD_DA|ADC0832:u1|data_input_model[0]             ; |AD_DA|ADC0832:u1|data_input_model[0]             ; combout          ;
+; |AD_DA|ADC0832:u1|data_input_model[1]             ; |AD_DA|ADC0832:u1|data_input_model[1]             ; combout          ;
 ; |AD_DA|ADC0832:u1|DI0                             ; |AD_DA|ADC0832:u1|DI0                             ; combout          ;
 ; |AD_DA|ADC0832:u1|DI1                             ; |AD_DA|ADC0832:u1|DI1                             ; combout          ;
 ; |AD_DA|clk_1                                      ; |AD_DA|clk_1~corein                               ; combout          ;
@@ -195,125 +201,257 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |AD_DA|CLKNUM[3]                                  ; |AD_DA|CLKNUM[3]                                  ; padio            ;
 ; |AD_DA|CLKNUM[4]                                  ; |AD_DA|CLKNUM[4]                                  ; padio            ;
 ; |AD_DA|DO_1                                       ; |AD_DA|DO_1                                       ; padio            ;
+; |AD_DA|DataA_output[0]                            ; |AD_DA|DataA_output[0]                            ; padio            ;
+; |AD_DA|DataA_output[1]                            ; |AD_DA|DataA_output[1]                            ; padio            ;
+; |AD_DA|DataB_output[3]                            ; |AD_DA|DataB_output[3]                            ; padio            ;
+; |AD_DA|DataB_output[4]                            ; |AD_DA|DataB_output[4]                            ; padio            ;
+; |AD_DA|DataB_output[5]                            ; |AD_DA|DataB_output[5]                            ; padio            ;
+; |AD_DA|DataB_output[6]                            ; |AD_DA|DataB_output[6]                            ; padio            ;
+; |AD_DA|DataB_output[7]                            ; |AD_DA|DataB_output[7]                            ; padio            ;
+; |AD_DA|Parallel_Data[0]                           ; |AD_DA|Parallel_Data[0]                           ; padio            ;
+; |AD_DA|Parallel_Data[1]                           ; |AD_DA|Parallel_Data[1]                           ; padio            ;
 +---------------------------------------------------+---------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+--------------------------------------------------------------------------------------------------+
-; Missing 1-Value Coverage                                                                         ;
-+---------------------------------------+---------------------------------------+------------------+
-; Node Name                             ; Output Port Name                      ; Output Port Type ;
-+---------------------------------------+---------------------------------------+------------------+
-; |AD_DA|CLKNUM[5]~reg0                 ; |AD_DA|CLKNUM[5]~9                    ; cout             ;
-; |AD_DA|CLKNUM[6]~reg0                 ; |AD_DA|CLKNUM[6]~11                   ; cout0            ;
-; |AD_DA|CLKNUM[6]~reg0                 ; |AD_DA|CLKNUM[6]~11COUT1_97           ; cout1            ;
-; |AD_DA|CLKNUM[7]~reg0                 ; |AD_DA|CLKNUM[7]~13                   ; cout0            ;
-; |AD_DA|CLKNUM[7]~reg0                 ; |AD_DA|CLKNUM[7]~13COUT1_99           ; cout1            ;
-; |AD_DA|CLKNUM[8]~reg0                 ; |AD_DA|CLKNUM[8]~15                   ; cout0            ;
-; |AD_DA|CLKNUM[8]~reg0                 ; |AD_DA|CLKNUM[8]~15COUT1_101          ; cout1            ;
-; |AD_DA|CLKNUM[9]~reg0                 ; |AD_DA|CLKNUM[9]~17                   ; cout0            ;
-; |AD_DA|CLKNUM[9]~reg0                 ; |AD_DA|CLKNUM[9]~17COUT1_103          ; cout1            ;
-; |AD_DA|CLKNUM[10]~reg0                ; |AD_DA|CLKNUM[10]~19                  ; cout             ;
-; |AD_DA|CLKNUM[11]~reg0                ; |AD_DA|CLKNUM[11]~21                  ; cout0            ;
-; |AD_DA|CLKNUM[11]~reg0                ; |AD_DA|CLKNUM[11]~21COUT1_105         ; cout1            ;
-; |AD_DA|DI_1~2                         ; |AD_DA|DI_1~2                         ; combout          ;
-; |AD_DA|CLKNUM[12]~reg0                ; |AD_DA|CLKNUM[12]~23                  ; cout0            ;
-; |AD_DA|CLKNUM[12]~reg0                ; |AD_DA|CLKNUM[12]~23COUT1_107         ; cout1            ;
-; |AD_DA|CLKNUM[13]~reg0                ; |AD_DA|CLKNUM[13]~25                  ; cout0            ;
-; |AD_DA|CLKNUM[13]~reg0                ; |AD_DA|CLKNUM[13]~25COUT1_109         ; cout1            ;
-; |AD_DA|CLKNUM[14]~reg0                ; |AD_DA|CLKNUM[14]~27                  ; cout0            ;
-; |AD_DA|CLKNUM[14]~reg0                ; |AD_DA|CLKNUM[14]~27COUT1_111         ; cout1            ;
-; |AD_DA|CLKNUM[15]~reg0                ; |AD_DA|CLKNUM[15]~29                  ; cout             ;
-; |AD_DA|DI_1~3                         ; |AD_DA|DI_1~3                         ; combout          ;
-; |AD_DA|CLKNUM[16]~reg0                ; |AD_DA|CLKNUM[16]~31                  ; cout0            ;
-; |AD_DA|CLKNUM[16]~reg0                ; |AD_DA|CLKNUM[16]~31COUT1_113         ; cout1            ;
-; |AD_DA|CLKNUM[17]~reg0                ; |AD_DA|CLKNUM[17]~33                  ; cout0            ;
-; |AD_DA|CLKNUM[17]~reg0                ; |AD_DA|CLKNUM[17]~33COUT1_115         ; cout1            ;
-; |AD_DA|DI_1~5                         ; |AD_DA|DI_1~5                         ; combout          ;
-; |AD_DA|CLKNUM[20]~reg0                ; |AD_DA|CLKNUM[20]~35                  ; cout             ;
-; |AD_DA|CLKNUM[21]~reg0                ; |AD_DA|CLKNUM[21]~37                  ; cout0            ;
-; |AD_DA|CLKNUM[21]~reg0                ; |AD_DA|CLKNUM[21]~37COUT1_121         ; cout1            ;
-; |AD_DA|CLKNUM[22]~reg0                ; |AD_DA|CLKNUM[22]~39                  ; cout0            ;
-; |AD_DA|CLKNUM[22]~reg0                ; |AD_DA|CLKNUM[22]~39COUT1_123         ; cout1            ;
-; |AD_DA|CLKNUM[23]~reg0                ; |AD_DA|CLKNUM[23]~41                  ; cout0            ;
-; |AD_DA|CLKNUM[23]~reg0                ; |AD_DA|CLKNUM[23]~41COUT1_125         ; cout1            ;
-; |AD_DA|DI_1~6                         ; |AD_DA|DI_1~6                         ; combout          ;
-; |AD_DA|CLKNUM[18]~reg0                ; |AD_DA|CLKNUM[18]~43                  ; cout0            ;
-; |AD_DA|CLKNUM[18]~reg0                ; |AD_DA|CLKNUM[18]~43COUT1_117         ; cout1            ;
-; |AD_DA|CLKNUM[19]~reg0                ; |AD_DA|CLKNUM[19]~45                  ; cout0            ;
-; |AD_DA|CLKNUM[19]~reg0                ; |AD_DA|CLKNUM[19]~45COUT1_119         ; cout1            ;
-; |AD_DA|DI_1~7                         ; |AD_DA|DI_1~7                         ; combout          ;
-; |AD_DA|CLKNUM[24]~reg0                ; |AD_DA|CLKNUM[24]~47                  ; cout0            ;
-; |AD_DA|CLKNUM[24]~reg0                ; |AD_DA|CLKNUM[24]~47COUT1_127         ; cout1            ;
-; |AD_DA|CLKNUM[25]~reg0                ; |AD_DA|CLKNUM[25]~49                  ; cout             ;
-; |AD_DA|CLKNUM[26]~reg0                ; |AD_DA|CLKNUM[26]~51                  ; cout0            ;
-; |AD_DA|CLKNUM[26]~reg0                ; |AD_DA|CLKNUM[26]~51COUT1_129         ; cout1            ;
-; |AD_DA|CLKNUM[27]~reg0                ; |AD_DA|CLKNUM[27]~53                  ; cout0            ;
-; |AD_DA|CLKNUM[27]~reg0                ; |AD_DA|CLKNUM[27]~53COUT1_131         ; cout1            ;
-; |AD_DA|DI_1~8                         ; |AD_DA|DI_1~8                         ; combout          ;
-; |AD_DA|CLKNUM[28]~reg0                ; |AD_DA|CLKNUM[28]~55                  ; cout0            ;
-; |AD_DA|CLKNUM[28]~reg0                ; |AD_DA|CLKNUM[28]~55COUT1_133         ; cout1            ;
-; |AD_DA|CLKNUM[29]~reg0                ; |AD_DA|CLKNUM[29]~57                  ; cout0            ;
-; |AD_DA|CLKNUM[29]~reg0                ; |AD_DA|CLKNUM[29]~57COUT1_135         ; cout1            ;
-; |AD_DA|CLKNUM[30]~reg0                ; |AD_DA|CLKNUM[30]~59                  ; cout             ;
-; |AD_DA|DI_1~9                         ; |AD_DA|DI_1~9                         ; combout          ;
-; |AD_DA|ADC0832:u1|Add0~1              ; |AD_DA|ADC0832:u1|Add0~1              ; combout          ;
-; |AD_DA|ADC0832:u1|Add0~15             ; |AD_DA|ADC0832:u1|Add0~15             ; combout          ;
-; |AD_DA|ADC0832:u1|Add0~29             ; |AD_DA|ADC0832:u1|Add0~29             ; combout          ;
-; |AD_DA|ADC0832:u1|Add0~30             ; |AD_DA|ADC0832:u1|Add0~32COUT1_89     ; cout1            ;
-; |AD_DA|ADC0832:u1|Add0~36             ; |AD_DA|ADC0832:u1|Add0~36             ; combout          ;
-; |AD_DA|ADC0832:u1|Add0~43             ; |AD_DA|ADC0832:u1|Add0~43             ; combout          ;
-; |AD_DA|ADC0832:u1|Add0~50             ; |AD_DA|ADC0832:u1|Add0~50             ; combout          ;
-; |AD_DA|ADC0832:u1|Add0~51             ; |AD_DA|ADC0832:u1|Add0~51             ; combout          ;
-; |AD_DA|ADC0832:u1|Add0~56             ; |AD_DA|ADC0832:u1|Add0~56             ; combout          ;
-; |AD_DA|ADC0832:u1|data[1]             ; |AD_DA|ADC0832:u1|data[1]             ; combout          ;
-; |AD_DA|ADC0832:u1|data[0]             ; |AD_DA|ADC0832:u1|data[0]             ; combout          ;
-; |AD_DA|ADC0832:u1|output_order        ; |AD_DA|ADC0832:u1|output_order        ; combout          ;
-; |AD_DA|ADC0832:u1|data_input_model[1] ; |AD_DA|ADC0832:u1|data_input_model[1] ; combout          ;
-; |AD_DA|CH1_1[6]                       ; |AD_DA|CH1_1[6]~corein                ; combout          ;
-; |AD_DA|CH0_1[6]                       ; |AD_DA|CH0_1[6]~corein                ; combout          ;
-; |AD_DA|CH1_1[2]                       ; |AD_DA|CH1_1[2]~corein                ; combout          ;
-; |AD_DA|CH0_1[2]                       ; |AD_DA|CH0_1[2]~corein                ; combout          ;
-; |AD_DA|CH1_1[1]                       ; |AD_DA|CH1_1[1]~corein                ; combout          ;
-; |AD_DA|CH0_1[1]                       ; |AD_DA|CH0_1[1]~corein                ; combout          ;
-; |AD_DA|CH1_1[3]                       ; |AD_DA|CH1_1[3]~corein                ; combout          ;
-; |AD_DA|CH0_1[3]                       ; |AD_DA|CH0_1[3]~corein                ; combout          ;
-; |AD_DA|CH1_1[5]                       ; |AD_DA|CH1_1[5]~corein                ; combout          ;
-; |AD_DA|CH0_1[5]                       ; |AD_DA|CH0_1[5]~corein                ; combout          ;
-; |AD_DA|CH1_1[7]                       ; |AD_DA|CH1_1[7]~corein                ; combout          ;
-; |AD_DA|CH0_1[7]                       ; |AD_DA|CH0_1[7]~corein                ; combout          ;
-; |AD_DA|CH1_1[4]                       ; |AD_DA|CH1_1[4]~corein                ; combout          ;
-; |AD_DA|CH0_1[4]                       ; |AD_DA|CH0_1[4]~corein                ; combout          ;
-; |AD_DA|CH1_1[0]                       ; |AD_DA|CH1_1[0]~corein                ; combout          ;
-; |AD_DA|CH0_1[0]                       ; |AD_DA|CH0_1[0]~corein                ; combout          ;
-; |AD_DA|CS_output                      ; |AD_DA|CS_output                      ; padio            ;
-; |AD_DA|CLKNUM[6]                      ; |AD_DA|CLKNUM[6]                      ; padio            ;
-; |AD_DA|CLKNUM[7]                      ; |AD_DA|CLKNUM[7]                      ; padio            ;
-; |AD_DA|CLKNUM[8]                      ; |AD_DA|CLKNUM[8]                      ; padio            ;
-; |AD_DA|CLKNUM[9]                      ; |AD_DA|CLKNUM[9]                      ; padio            ;
-; |AD_DA|CLKNUM[10]                     ; |AD_DA|CLKNUM[10]                     ; padio            ;
-; |AD_DA|CLKNUM[11]                     ; |AD_DA|CLKNUM[11]                     ; padio            ;
-; |AD_DA|CLKNUM[12]                     ; |AD_DA|CLKNUM[12]                     ; padio            ;
-; |AD_DA|CLKNUM[13]                     ; |AD_DA|CLKNUM[13]                     ; padio            ;
-; |AD_DA|CLKNUM[14]                     ; |AD_DA|CLKNUM[14]                     ; padio            ;
-; |AD_DA|CLKNUM[15]                     ; |AD_DA|CLKNUM[15]                     ; padio            ;
-; |AD_DA|CLKNUM[16]                     ; |AD_DA|CLKNUM[16]                     ; padio            ;
-; |AD_DA|CLKNUM[17]                     ; |AD_DA|CLKNUM[17]                     ; padio            ;
-; |AD_DA|CLKNUM[18]                     ; |AD_DA|CLKNUM[18]                     ; padio            ;
-; |AD_DA|CLKNUM[19]                     ; |AD_DA|CLKNUM[19]                     ; padio            ;
-; |AD_DA|CLKNUM[20]                     ; |AD_DA|CLKNUM[20]                     ; padio            ;
-; |AD_DA|CLKNUM[21]                     ; |AD_DA|CLKNUM[21]                     ; padio            ;
-; |AD_DA|CLKNUM[22]                     ; |AD_DA|CLKNUM[22]                     ; padio            ;
-; |AD_DA|CLKNUM[23]                     ; |AD_DA|CLKNUM[23]                     ; padio            ;
-; |AD_DA|CLKNUM[24]                     ; |AD_DA|CLKNUM[24]                     ; padio            ;
-; |AD_DA|CLKNUM[25]                     ; |AD_DA|CLKNUM[25]                     ; padio            ;
-; |AD_DA|CLKNUM[26]                     ; |AD_DA|CLKNUM[26]                     ; padio            ;
-; |AD_DA|CLKNUM[27]                     ; |AD_DA|CLKNUM[27]                     ; padio            ;
-; |AD_DA|CLKNUM[28]                     ; |AD_DA|CLKNUM[28]                     ; padio            ;
-; |AD_DA|CLKNUM[29]                     ; |AD_DA|CLKNUM[29]                     ; padio            ;
-; |AD_DA|CLKNUM[30]                     ; |AD_DA|CLKNUM[30]                     ; padio            ;
-; |AD_DA|CLKNUM[31]                     ; |AD_DA|CLKNUM[31]                     ; padio            ;
-+---------------------------------------+---------------------------------------+------------------+
++---------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                              ;
++--------------------------------+-----------------------------------+------------------+
+; Node Name                      ; Output Port Name                  ; Output Port Type ;
++--------------------------------+-----------------------------------+------------------+
+; |AD_DA|CLKNUM[6]~reg0          ; |AD_DA|CLKNUM[6]~11               ; cout0            ;
+; |AD_DA|CLKNUM[6]~reg0          ; |AD_DA|CLKNUM[6]~11COUT1_97       ; cout1            ;
+; |AD_DA|CLKNUM[7]~reg0          ; |AD_DA|CLKNUM[7]~13               ; cout0            ;
+; |AD_DA|CLKNUM[7]~reg0          ; |AD_DA|CLKNUM[7]~13COUT1_99       ; cout1            ;
+; |AD_DA|CLKNUM[8]~reg0          ; |AD_DA|CLKNUM[8]~15               ; cout0            ;
+; |AD_DA|CLKNUM[8]~reg0          ; |AD_DA|CLKNUM[8]~15COUT1_101      ; cout1            ;
+; |AD_DA|CLKNUM[9]~reg0          ; |AD_DA|CLKNUM[9]~17               ; cout0            ;
+; |AD_DA|CLKNUM[9]~reg0          ; |AD_DA|CLKNUM[9]~17COUT1_103      ; cout1            ;
+; |AD_DA|CLKNUM[10]~reg0         ; |AD_DA|CLKNUM[10]~19              ; cout             ;
+; |AD_DA|CLKNUM[11]~reg0         ; |AD_DA|CLKNUM[11]~21              ; cout0            ;
+; |AD_DA|CLKNUM[11]~reg0         ; |AD_DA|CLKNUM[11]~21COUT1_105     ; cout1            ;
+; |AD_DA|CLKNUM[12]~reg0         ; |AD_DA|CLKNUM[12]~23              ; cout0            ;
+; |AD_DA|CLKNUM[12]~reg0         ; |AD_DA|CLKNUM[12]~23COUT1_107     ; cout1            ;
+; |AD_DA|CLKNUM[13]~reg0         ; |AD_DA|CLKNUM[13]~25              ; cout0            ;
+; |AD_DA|CLKNUM[13]~reg0         ; |AD_DA|CLKNUM[13]~25COUT1_109     ; cout1            ;
+; |AD_DA|CLKNUM[14]~reg0         ; |AD_DA|CLKNUM[14]~27              ; cout0            ;
+; |AD_DA|CLKNUM[14]~reg0         ; |AD_DA|CLKNUM[14]~27COUT1_111     ; cout1            ;
+; |AD_DA|CLKNUM[15]~reg0         ; |AD_DA|CLKNUM[15]~29              ; cout             ;
+; |AD_DA|CLKNUM[16]~reg0         ; |AD_DA|CLKNUM[16]~31              ; cout0            ;
+; |AD_DA|CLKNUM[16]~reg0         ; |AD_DA|CLKNUM[16]~31COUT1_113     ; cout1            ;
+; |AD_DA|CLKNUM[17]~reg0         ; |AD_DA|CLKNUM[17]~33              ; cout0            ;
+; |AD_DA|CLKNUM[17]~reg0         ; |AD_DA|CLKNUM[17]~33COUT1_115     ; cout1            ;
+; |AD_DA|CLKNUM[18]~reg0         ; |AD_DA|CLKNUM[18]~35              ; cout0            ;
+; |AD_DA|CLKNUM[18]~reg0         ; |AD_DA|CLKNUM[18]~35COUT1_117     ; cout1            ;
+; |AD_DA|CLKNUM[19]~reg0         ; |AD_DA|CLKNUM[19]~37              ; cout0            ;
+; |AD_DA|CLKNUM[19]~reg0         ; |AD_DA|CLKNUM[19]~37COUT1_119     ; cout1            ;
+; |AD_DA|CLKNUM[20]~reg0         ; |AD_DA|CLKNUM[20]~39              ; cout             ;
+; |AD_DA|CLKNUM[21]~reg0         ; |AD_DA|CLKNUM[21]~41              ; cout0            ;
+; |AD_DA|CLKNUM[21]~reg0         ; |AD_DA|CLKNUM[21]~41COUT1_121     ; cout1            ;
+; |AD_DA|CLKNUM[22]~reg0         ; |AD_DA|CLKNUM[22]~43              ; cout0            ;
+; |AD_DA|CLKNUM[22]~reg0         ; |AD_DA|CLKNUM[22]~43COUT1_123     ; cout1            ;
+; |AD_DA|CLKNUM[23]~reg0         ; |AD_DA|CLKNUM[23]~45              ; cout0            ;
+; |AD_DA|CLKNUM[23]~reg0         ; |AD_DA|CLKNUM[23]~45COUT1_125     ; cout1            ;
+; |AD_DA|CLKNUM[24]~reg0         ; |AD_DA|CLKNUM[24]~47              ; cout0            ;
+; |AD_DA|CLKNUM[24]~reg0         ; |AD_DA|CLKNUM[24]~47COUT1_127     ; cout1            ;
+; |AD_DA|CLKNUM[25]~reg0         ; |AD_DA|CLKNUM[25]~49              ; cout             ;
+; |AD_DA|CLKNUM[26]~reg0         ; |AD_DA|CLKNUM[26]~51              ; cout0            ;
+; |AD_DA|CLKNUM[26]~reg0         ; |AD_DA|CLKNUM[26]~51COUT1_129     ; cout1            ;
+; |AD_DA|CLKNUM[27]~reg0         ; |AD_DA|CLKNUM[27]~53              ; cout0            ;
+; |AD_DA|CLKNUM[27]~reg0         ; |AD_DA|CLKNUM[27]~53COUT1_131     ; cout1            ;
+; |AD_DA|CLKNUM[28]~reg0         ; |AD_DA|CLKNUM[28]~55              ; cout0            ;
+; |AD_DA|CLKNUM[28]~reg0         ; |AD_DA|CLKNUM[28]~55COUT1_133     ; cout1            ;
+; |AD_DA|CLKNUM[29]~reg0         ; |AD_DA|CLKNUM[29]~57              ; cout0            ;
+; |AD_DA|CLKNUM[29]~reg0         ; |AD_DA|CLKNUM[29]~57COUT1_135     ; cout1            ;
+; |AD_DA|CLKNUM[30]~reg0         ; |AD_DA|CLKNUM[30]~59              ; cout             ;
+; |AD_DA|DataA[3]                ; |AD_DA|DataA[3]                   ; regout           ;
+; |AD_DA|DataA[4]                ; |AD_DA|DataA[4]                   ; regout           ;
+; |AD_DA|DataA[5]                ; |AD_DA|DataA[5]                   ; regout           ;
+; |AD_DA|DataA[6]                ; |AD_DA|DataA[6]                   ; regout           ;
+; |AD_DA|DataA[7]                ; |AD_DA|DataA[7]                   ; regout           ;
+; |AD_DA|DataB[0]                ; |AD_DA|DataB[0]                   ; regout           ;
+; |AD_DA|DataB[1]                ; |AD_DA|DataB[1]                   ; regout           ;
+; |AD_DA|Equal0~0                ; |AD_DA|Equal0~0                   ; combout          ;
+; |AD_DA|Equal0~1                ; |AD_DA|Equal0~1                   ; combout          ;
+; |AD_DA|Equal0~2                ; |AD_DA|Equal0~2                   ; combout          ;
+; |AD_DA|Equal0~3                ; |AD_DA|Equal0~3                   ; combout          ;
+; |AD_DA|Equal0~4                ; |AD_DA|Equal0~4                   ; combout          ;
+; |AD_DA|Equal0~5                ; |AD_DA|Equal0~5                   ; combout          ;
+; |AD_DA|Equal0~6                ; |AD_DA|Equal0~6                   ; combout          ;
+; |AD_DA|Equal0~7                ; |AD_DA|Equal0~7                   ; combout          ;
+; |AD_DA|Equal0~8                ; |AD_DA|Equal0~8                   ; combout          ;
+; |AD_DA|Equal0~9                ; |AD_DA|Equal0~9                   ; combout          ;
+; |AD_DA|ADC0832:u1|Mux8~4       ; |AD_DA|ADC0832:u1|Mux8~4          ; combout          ;
+; |AD_DA|ADC0832:u1|Mux8~6       ; |AD_DA|ADC0832:u1|Mux8~6          ; combout          ;
+; |AD_DA|COUNT[4]                ; |AD_DA|COUNT[4]~1                 ; cout0            ;
+; |AD_DA|COUNT[4]                ; |AD_DA|COUNT[4]~1COUT1_95         ; cout1            ;
+; |AD_DA|COUNT[5]                ; |AD_DA|COUNT[5]~3                 ; cout             ;
+; |AD_DA|COUNT[6]                ; |AD_DA|COUNT[6]~5                 ; cout0            ;
+; |AD_DA|COUNT[6]                ; |AD_DA|COUNT[6]~5COUT1_97         ; cout1            ;
+; |AD_DA|COUNT[7]                ; |AD_DA|COUNT[7]~7                 ; cout0            ;
+; |AD_DA|COUNT[7]                ; |AD_DA|COUNT[7]~7COUT1_99         ; cout1            ;
+; |AD_DA|Equal8~0                ; |AD_DA|Equal8~0                   ; combout          ;
+; |AD_DA|COUNT[8]                ; |AD_DA|COUNT[8]~9                 ; cout0            ;
+; |AD_DA|COUNT[8]                ; |AD_DA|COUNT[8]~9COUT1_101        ; cout1            ;
+; |AD_DA|COUNT[9]                ; |AD_DA|COUNT[9]~11                ; cout0            ;
+; |AD_DA|COUNT[9]                ; |AD_DA|COUNT[9]~11COUT1_103       ; cout1            ;
+; |AD_DA|COUNT[10]               ; |AD_DA|COUNT[10]~13               ; cout             ;
+; |AD_DA|COUNT[11]               ; |AD_DA|COUNT[11]~15               ; cout0            ;
+; |AD_DA|COUNT[11]               ; |AD_DA|COUNT[11]~15COUT1_105      ; cout1            ;
+; |AD_DA|Equal8~1                ; |AD_DA|Equal8~1                   ; combout          ;
+; |AD_DA|COUNT[12]               ; |AD_DA|COUNT[12]~17               ; cout0            ;
+; |AD_DA|COUNT[12]               ; |AD_DA|COUNT[12]~17COUT1_107      ; cout1            ;
+; |AD_DA|COUNT[13]               ; |AD_DA|COUNT[13]~19               ; cout0            ;
+; |AD_DA|COUNT[13]               ; |AD_DA|COUNT[13]~19COUT1_109      ; cout1            ;
+; |AD_DA|COUNT[14]               ; |AD_DA|COUNT[14]~21               ; cout0            ;
+; |AD_DA|COUNT[14]               ; |AD_DA|COUNT[14]~21COUT1_111      ; cout1            ;
+; |AD_DA|COUNT[15]               ; |AD_DA|COUNT[15]~23               ; cout             ;
+; |AD_DA|Equal8~2                ; |AD_DA|Equal8~2                   ; combout          ;
+; |AD_DA|COUNT[16]               ; |AD_DA|COUNT[16]~25               ; cout0            ;
+; |AD_DA|COUNT[16]               ; |AD_DA|COUNT[16]~25COUT1_113      ; cout1            ;
+; |AD_DA|COUNT[17]               ; |AD_DA|COUNT[17]~27               ; cout0            ;
+; |AD_DA|COUNT[17]               ; |AD_DA|COUNT[17]~27COUT1_115      ; cout1            ;
+; |AD_DA|COUNT[18]               ; |AD_DA|COUNT[18]~29               ; cout0            ;
+; |AD_DA|COUNT[18]               ; |AD_DA|COUNT[18]~29COUT1_117      ; cout1            ;
+; |AD_DA|COUNT[19]               ; |AD_DA|COUNT[19]~31               ; cout0            ;
+; |AD_DA|COUNT[19]               ; |AD_DA|COUNT[19]~31COUT1_119      ; cout1            ;
+; |AD_DA|Equal8~3                ; |AD_DA|Equal8~3                   ; combout          ;
+; |AD_DA|Equal8~4                ; |AD_DA|Equal8~4                   ; combout          ;
+; |AD_DA|COUNT[20]               ; |AD_DA|COUNT[20]~33               ; cout             ;
+; |AD_DA|COUNT[21]               ; |AD_DA|COUNT[21]~35               ; cout0            ;
+; |AD_DA|COUNT[21]               ; |AD_DA|COUNT[21]~35COUT1_121      ; cout1            ;
+; |AD_DA|COUNT[22]               ; |AD_DA|COUNT[22]~37               ; cout0            ;
+; |AD_DA|COUNT[22]               ; |AD_DA|COUNT[22]~37COUT1_123      ; cout1            ;
+; |AD_DA|COUNT[23]               ; |AD_DA|COUNT[23]~39               ; cout0            ;
+; |AD_DA|COUNT[23]               ; |AD_DA|COUNT[23]~39COUT1_125      ; cout1            ;
+; |AD_DA|Equal8~5                ; |AD_DA|Equal8~5                   ; combout          ;
+; |AD_DA|COUNT[24]               ; |AD_DA|COUNT[24]~41               ; cout0            ;
+; |AD_DA|COUNT[24]               ; |AD_DA|COUNT[24]~41COUT1_127      ; cout1            ;
+; |AD_DA|Equal8~6                ; |AD_DA|Equal8~6                   ; combout          ;
+; |AD_DA|COUNT[25]               ; |AD_DA|COUNT[25]~43               ; cout             ;
+; |AD_DA|COUNT[26]               ; |AD_DA|COUNT[26]~45               ; cout0            ;
+; |AD_DA|COUNT[26]               ; |AD_DA|COUNT[26]~45COUT1_129      ; cout1            ;
+; |AD_DA|COUNT[27]               ; |AD_DA|COUNT[27]~47               ; cout0            ;
+; |AD_DA|COUNT[27]               ; |AD_DA|COUNT[27]~47COUT1_131      ; cout1            ;
+; |AD_DA|COUNT[28]               ; |AD_DA|COUNT[28]~49               ; cout0            ;
+; |AD_DA|COUNT[28]               ; |AD_DA|COUNT[28]~49COUT1_133      ; cout1            ;
+; |AD_DA|Equal8~7                ; |AD_DA|Equal8~7                   ; combout          ;
+; |AD_DA|COUNT[29]               ; |AD_DA|COUNT[29]~51               ; cout0            ;
+; |AD_DA|COUNT[29]               ; |AD_DA|COUNT[29]~51COUT1_135      ; cout1            ;
+; |AD_DA|COUNT[30]               ; |AD_DA|COUNT[30]~53               ; cout             ;
+; |AD_DA|Equal8~8                ; |AD_DA|Equal8~8                   ; combout          ;
+; |AD_DA|Equal8~9                ; |AD_DA|Equal8~9                   ; combout          ;
+; |AD_DA|Equal8~10               ; |AD_DA|Equal8~10                  ; combout          ;
+; |AD_DA|ADC0832:u1|Add0~1       ; |AD_DA|ADC0832:u1|Add0~1          ; combout          ;
+; |AD_DA|ADC0832:u1|Add0~2       ; |AD_DA|ADC0832:u1|Add0~2          ; combout          ;
+; |AD_DA|ADC0832:u1|Add0~2       ; |AD_DA|ADC0832:u1|Add0~4          ; cout0            ;
+; |AD_DA|ADC0832:u1|Add0~7       ; |AD_DA|ADC0832:u1|Add0~7          ; combout          ;
+; |AD_DA|ADC0832:u1|Add0~15      ; |AD_DA|ADC0832:u1|Add0~15         ; combout          ;
+; |AD_DA|ADC0832:u1|Add0~21      ; |AD_DA|ADC0832:u1|Add0~21         ; combout          ;
+; |AD_DA|ADC0832:u1|Add0~22      ; |AD_DA|ADC0832:u1|Add0~22         ; combout          ;
+; |AD_DA|ADC0832:u1|Add0~23      ; |AD_DA|ADC0832:u1|Add0~23         ; combout          ;
+; |AD_DA|ADC0832:u1|Add0~23      ; |AD_DA|ADC0832:u1|Add0~25         ; cout0            ;
+; |AD_DA|ADC0832:u1|Add0~23      ; |AD_DA|ADC0832:u1|Add0~25COUT1_87 ; cout1            ;
+; |AD_DA|ADC0832:u1|Add0~28      ; |AD_DA|ADC0832:u1|Add0~28         ; combout          ;
+; |AD_DA|ADC0832:u1|Add0~29      ; |AD_DA|ADC0832:u1|Add0~29         ; combout          ;
+; |AD_DA|ADC0832:u1|Add0~30      ; |AD_DA|ADC0832:u1|Add0~30         ; combout          ;
+; |AD_DA|ADC0832:u1|Add0~30      ; |AD_DA|ADC0832:u1|Add0~32COUT1_89 ; cout1            ;
+; |AD_DA|ADC0832:u1|Add0~35      ; |AD_DA|ADC0832:u1|Add0~35         ; combout          ;
+; |AD_DA|ADC0832:u1|Add0~36      ; |AD_DA|ADC0832:u1|Add0~36         ; combout          ;
+; |AD_DA|ADC0832:u1|Add0~42      ; |AD_DA|ADC0832:u1|Add0~42         ; combout          ;
+; |AD_DA|ADC0832:u1|Add0~43      ; |AD_DA|ADC0832:u1|Add0~43         ; combout          ;
+; |AD_DA|ADC0832:u1|Add0~44      ; |AD_DA|ADC0832:u1|Add0~44         ; combout          ;
+; |AD_DA|ADC0832:u1|Add0~49      ; |AD_DA|ADC0832:u1|Add0~49         ; combout          ;
+; |AD_DA|ADC0832:u1|Add0~50      ; |AD_DA|ADC0832:u1|Add0~50         ; combout          ;
+; |AD_DA|ADC0832:u1|Add0~56      ; |AD_DA|ADC0832:u1|Add0~56         ; combout          ;
+; |AD_DA|ADC0832:u1|data[6]      ; |AD_DA|ADC0832:u1|data[6]         ; combout          ;
+; |AD_DA|ADC0832:u1|data[1]      ; |AD_DA|ADC0832:u1|data[1]         ; combout          ;
+; |AD_DA|ADC0832:u1|data[3]      ; |AD_DA|ADC0832:u1|data[3]         ; combout          ;
+; |AD_DA|ADC0832:u1|data[5]      ; |AD_DA|ADC0832:u1|data[5]         ; combout          ;
+; |AD_DA|ADC0832:u1|data[7]      ; |AD_DA|ADC0832:u1|data[7]         ; combout          ;
+; |AD_DA|ADC0832:u1|data[4]      ; |AD_DA|ADC0832:u1|data[4]         ; combout          ;
+; |AD_DA|ADC0832:u1|data[0]      ; |AD_DA|ADC0832:u1|data[0]         ; combout          ;
+; |AD_DA|ADC0832:u1|output_order ; |AD_DA|ADC0832:u1|output_order    ; combout          ;
+; |AD_DA|CH1_1[6]                ; |AD_DA|CH1_1[6]~corein            ; combout          ;
+; |AD_DA|CH0_1[6]                ; |AD_DA|CH0_1[6]~corein            ; combout          ;
+; |AD_DA|CH1_1[2]                ; |AD_DA|CH1_1[2]~corein            ; combout          ;
+; |AD_DA|CH0_1[2]                ; |AD_DA|CH0_1[2]~corein            ; combout          ;
+; |AD_DA|CH1_1[1]                ; |AD_DA|CH1_1[1]~corein            ; combout          ;
+; |AD_DA|CH0_1[1]                ; |AD_DA|CH0_1[1]~corein            ; combout          ;
+; |AD_DA|CH1_1[3]                ; |AD_DA|CH1_1[3]~corein            ; combout          ;
+; |AD_DA|CH0_1[3]                ; |AD_DA|CH0_1[3]~corein            ; combout          ;
+; |AD_DA|CH1_1[5]                ; |AD_DA|CH1_1[5]~corein            ; combout          ;
+; |AD_DA|CH0_1[5]                ; |AD_DA|CH0_1[5]~corein            ; combout          ;
+; |AD_DA|CH1_1[7]                ; |AD_DA|CH1_1[7]~corein            ; combout          ;
+; |AD_DA|CH0_1[7]                ; |AD_DA|CH0_1[7]~corein            ; combout          ;
+; |AD_DA|CH1_1[4]                ; |AD_DA|CH1_1[4]~corein            ; combout          ;
+; |AD_DA|CH0_1[4]                ; |AD_DA|CH0_1[4]~corein            ; combout          ;
+; |AD_DA|CH1_1[0]                ; |AD_DA|CH1_1[0]~corein            ; combout          ;
+; |AD_DA|CH0_1[0]                ; |AD_DA|CH0_1[0]~corein            ; combout          ;
+; |AD_DA|CS_output               ; |AD_DA|CS_output                  ; padio            ;
+; |AD_DA|CLKNUM[6]               ; |AD_DA|CLKNUM[6]                  ; padio            ;
+; |AD_DA|CLKNUM[7]               ; |AD_DA|CLKNUM[7]                  ; padio            ;
+; |AD_DA|CLKNUM[8]               ; |AD_DA|CLKNUM[8]                  ; padio            ;
+; |AD_DA|CLKNUM[9]               ; |AD_DA|CLKNUM[9]                  ; padio            ;
+; |AD_DA|CLKNUM[10]              ; |AD_DA|CLKNUM[10]                 ; padio            ;
+; |AD_DA|CLKNUM[11]              ; |AD_DA|CLKNUM[11]                 ; padio            ;
+; |AD_DA|CLKNUM[12]              ; |AD_DA|CLKNUM[12]                 ; padio            ;
+; |AD_DA|CLKNUM[13]              ; |AD_DA|CLKNUM[13]                 ; padio            ;
+; |AD_DA|CLKNUM[14]              ; |AD_DA|CLKNUM[14]                 ; padio            ;
+; |AD_DA|CLKNUM[15]              ; |AD_DA|CLKNUM[15]                 ; padio            ;
+; |AD_DA|CLKNUM[16]              ; |AD_DA|CLKNUM[16]                 ; padio            ;
+; |AD_DA|CLKNUM[17]              ; |AD_DA|CLKNUM[17]                 ; padio            ;
+; |AD_DA|CLKNUM[18]              ; |AD_DA|CLKNUM[18]                 ; padio            ;
+; |AD_DA|CLKNUM[19]              ; |AD_DA|CLKNUM[19]                 ; padio            ;
+; |AD_DA|CLKNUM[20]              ; |AD_DA|CLKNUM[20]                 ; padio            ;
+; |AD_DA|CLKNUM[21]              ; |AD_DA|CLKNUM[21]                 ; padio            ;
+; |AD_DA|CLKNUM[22]              ; |AD_DA|CLKNUM[22]                 ; padio            ;
+; |AD_DA|CLKNUM[23]              ; |AD_DA|CLKNUM[23]                 ; padio            ;
+; |AD_DA|CLKNUM[24]              ; |AD_DA|CLKNUM[24]                 ; padio            ;
+; |AD_DA|CLKNUM[25]              ; |AD_DA|CLKNUM[25]                 ; padio            ;
+; |AD_DA|CLKNUM[26]              ; |AD_DA|CLKNUM[26]                 ; padio            ;
+; |AD_DA|CLKNUM[27]              ; |AD_DA|CLKNUM[27]                 ; padio            ;
+; |AD_DA|CLKNUM[28]              ; |AD_DA|CLKNUM[28]                 ; padio            ;
+; |AD_DA|CLKNUM[29]              ; |AD_DA|CLKNUM[29]                 ; padio            ;
+; |AD_DA|CLKNUM[30]              ; |AD_DA|CLKNUM[30]                 ; padio            ;
+; |AD_DA|CLKNUM[31]              ; |AD_DA|CLKNUM[31]                 ; padio            ;
+; |AD_DA|DataA_output[3]         ; |AD_DA|DataA_output[3]            ; padio            ;
+; |AD_DA|DataA_output[4]         ; |AD_DA|DataA_output[4]            ; padio            ;
+; |AD_DA|DataA_output[5]         ; |AD_DA|DataA_output[5]            ; padio            ;
+; |AD_DA|DataA_output[6]         ; |AD_DA|DataA_output[6]            ; padio            ;
+; |AD_DA|DataA_output[7]         ; |AD_DA|DataA_output[7]            ; padio            ;
+; |AD_DA|DataB_output[0]         ; |AD_DA|DataB_output[0]            ; padio            ;
+; |AD_DA|DataB_output[1]         ; |AD_DA|DataB_output[1]            ; padio            ;
+; |AD_DA|Parallel_Data[3]        ; |AD_DA|Parallel_Data[3]           ; padio            ;
+; |AD_DA|Parallel_Data[4]        ; |AD_DA|Parallel_Data[4]           ; padio            ;
+; |AD_DA|Parallel_Data[5]        ; |AD_DA|Parallel_Data[5]           ; padio            ;
+; |AD_DA|Parallel_Data[6]        ; |AD_DA|Parallel_Data[6]           ; padio            ;
+; |AD_DA|Parallel_Data[7]        ; |AD_DA|Parallel_Data[7]           ; padio            ;
+; |AD_DA|Parallel_Data[8]        ; |AD_DA|Parallel_Data[8]           ; padio            ;
+; |AD_DA|Parallel_Data[9]        ; |AD_DA|Parallel_Data[9]           ; padio            ;
+; |AD_DA|Parallel_Data[10]       ; |AD_DA|Parallel_Data[10]          ; padio            ;
+; |AD_DA|Parallel_Data[11]       ; |AD_DA|Parallel_Data[11]          ; padio            ;
+; |AD_DA|Parallel_Data[12]       ; |AD_DA|Parallel_Data[12]          ; padio            ;
+; |AD_DA|Parallel_Data[13]       ; |AD_DA|Parallel_Data[13]          ; padio            ;
+; |AD_DA|Parallel_Data[14]       ; |AD_DA|Parallel_Data[14]          ; padio            ;
+; |AD_DA|Parallel_Data[15]       ; |AD_DA|Parallel_Data[15]          ; padio            ;
+; |AD_DA|Parallel_Data[16]       ; |AD_DA|Parallel_Data[16]          ; padio            ;
+; |AD_DA|Parallel_Data[17]       ; |AD_DA|Parallel_Data[17]          ; padio            ;
+; |AD_DA|Parallel_Data[18]       ; |AD_DA|Parallel_Data[18]          ; padio            ;
+; |AD_DA|Parallel_Data[19]       ; |AD_DA|Parallel_Data[19]          ; padio            ;
+; |AD_DA|Parallel_Data[20]       ; |AD_DA|Parallel_Data[20]          ; padio            ;
+; |AD_DA|Parallel_Data[21]       ; |AD_DA|Parallel_Data[21]          ; padio            ;
+; |AD_DA|Parallel_Data[22]       ; |AD_DA|Parallel_Data[22]          ; padio            ;
+; |AD_DA|Parallel_Data[23]       ; |AD_DA|Parallel_Data[23]          ; padio            ;
+; |AD_DA|Parallel_Data[24]       ; |AD_DA|Parallel_Data[24]          ; padio            ;
+; |AD_DA|Parallel_Data[25]       ; |AD_DA|Parallel_Data[25]          ; padio            ;
+; |AD_DA|Parallel_Data[26]       ; |AD_DA|Parallel_Data[26]          ; padio            ;
+; |AD_DA|Parallel_Data[27]       ; |AD_DA|Parallel_Data[27]          ; padio            ;
+; |AD_DA|Parallel_Data[28]       ; |AD_DA|Parallel_Data[28]          ; padio            ;
+; |AD_DA|Parallel_Data[29]       ; |AD_DA|Parallel_Data[29]          ; padio            ;
+; |AD_DA|Parallel_Data[30]       ; |AD_DA|Parallel_Data[30]          ; padio            ;
+; |AD_DA|Parallel_Data[31]       ; |AD_DA|Parallel_Data[31]          ; padio            ;
++--------------------------------+-----------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
@@ -322,7 +460,9 @@ The following table displays output ports that do not toggle to 0 during simulat
 +--------------------------------------------------+--------------------------------------------------+------------------+
 ; Node Name                                        ; Output Port Name                                 ; Output Port Type ;
 +--------------------------------------------------+--------------------------------------------------+------------------+
-; |AD_DA|CLKNUM[5]~reg0                            ; |AD_DA|CLKNUM[5]~9                               ; cout             ;
+; |AD_DA|ADC0832:u1|current_state.Start_Order_Wait ; |AD_DA|ADC0832:u1|current_state.Start_Order_Wait ; regout           ;
+; |AD_DA|ADC0832:u1|current_state.Data_Output      ; |AD_DA|ADC0832:u1|state_signal~4                 ; combout          ;
+; |AD_DA|ADC0832:u1|current_state.Data_Output      ; |AD_DA|ADC0832:u1|current_state.Data_Output      ; regout           ;
 ; |AD_DA|CLKNUM[6]~reg0                            ; |AD_DA|CLKNUM[6]~11                              ; cout0            ;
 ; |AD_DA|CLKNUM[6]~reg0                            ; |AD_DA|CLKNUM[6]~11COUT1_97                      ; cout1            ;
 ; |AD_DA|CLKNUM[7]~reg0                            ; |AD_DA|CLKNUM[7]~13                              ; cout0            ;
@@ -334,7 +474,6 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |AD_DA|CLKNUM[10]~reg0                           ; |AD_DA|CLKNUM[10]~19                             ; cout             ;
 ; |AD_DA|CLKNUM[11]~reg0                           ; |AD_DA|CLKNUM[11]~21                             ; cout0            ;
 ; |AD_DA|CLKNUM[11]~reg0                           ; |AD_DA|CLKNUM[11]~21COUT1_105                    ; cout1            ;
-; |AD_DA|DI_1~2                                    ; |AD_DA|DI_1~2                                    ; combout          ;
 ; |AD_DA|CLKNUM[12]~reg0                           ; |AD_DA|CLKNUM[12]~23                             ; cout0            ;
 ; |AD_DA|CLKNUM[12]~reg0                           ; |AD_DA|CLKNUM[12]~23COUT1_107                    ; cout1            ;
 ; |AD_DA|CLKNUM[13]~reg0                           ; |AD_DA|CLKNUM[13]~25                             ; cout0            ;
@@ -342,25 +481,21 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |AD_DA|CLKNUM[14]~reg0                           ; |AD_DA|CLKNUM[14]~27                             ; cout0            ;
 ; |AD_DA|CLKNUM[14]~reg0                           ; |AD_DA|CLKNUM[14]~27COUT1_111                    ; cout1            ;
 ; |AD_DA|CLKNUM[15]~reg0                           ; |AD_DA|CLKNUM[15]~29                             ; cout             ;
-; |AD_DA|DI_1~3                                    ; |AD_DA|DI_1~3                                    ; combout          ;
 ; |AD_DA|CLKNUM[16]~reg0                           ; |AD_DA|CLKNUM[16]~31                             ; cout0            ;
 ; |AD_DA|CLKNUM[16]~reg0                           ; |AD_DA|CLKNUM[16]~31COUT1_113                    ; cout1            ;
 ; |AD_DA|CLKNUM[17]~reg0                           ; |AD_DA|CLKNUM[17]~33                             ; cout0            ;
 ; |AD_DA|CLKNUM[17]~reg0                           ; |AD_DA|CLKNUM[17]~33COUT1_115                    ; cout1            ;
-; |AD_DA|DI_1~5                                    ; |AD_DA|DI_1~5                                    ; combout          ;
-; |AD_DA|CLKNUM[20]~reg0                           ; |AD_DA|CLKNUM[20]~35                             ; cout             ;
-; |AD_DA|CLKNUM[21]~reg0                           ; |AD_DA|CLKNUM[21]~37                             ; cout0            ;
-; |AD_DA|CLKNUM[21]~reg0                           ; |AD_DA|CLKNUM[21]~37COUT1_121                    ; cout1            ;
-; |AD_DA|CLKNUM[22]~reg0                           ; |AD_DA|CLKNUM[22]~39                             ; cout0            ;
-; |AD_DA|CLKNUM[22]~reg0                           ; |AD_DA|CLKNUM[22]~39COUT1_123                    ; cout1            ;
-; |AD_DA|CLKNUM[23]~reg0                           ; |AD_DA|CLKNUM[23]~41                             ; cout0            ;
-; |AD_DA|CLKNUM[23]~reg0                           ; |AD_DA|CLKNUM[23]~41COUT1_125                    ; cout1            ;
-; |AD_DA|DI_1~6                                    ; |AD_DA|DI_1~6                                    ; combout          ;
-; |AD_DA|CLKNUM[18]~reg0                           ; |AD_DA|CLKNUM[18]~43                             ; cout0            ;
-; |AD_DA|CLKNUM[18]~reg0                           ; |AD_DA|CLKNUM[18]~43COUT1_117                    ; cout1            ;
-; |AD_DA|CLKNUM[19]~reg0                           ; |AD_DA|CLKNUM[19]~45                             ; cout0            ;
-; |AD_DA|CLKNUM[19]~reg0                           ; |AD_DA|CLKNUM[19]~45COUT1_119                    ; cout1            ;
-; |AD_DA|DI_1~7                                    ; |AD_DA|DI_1~7                                    ; combout          ;
+; |AD_DA|CLKNUM[18]~reg0                           ; |AD_DA|CLKNUM[18]~35                             ; cout0            ;
+; |AD_DA|CLKNUM[18]~reg0                           ; |AD_DA|CLKNUM[18]~35COUT1_117                    ; cout1            ;
+; |AD_DA|CLKNUM[19]~reg0                           ; |AD_DA|CLKNUM[19]~37                             ; cout0            ;
+; |AD_DA|CLKNUM[19]~reg0                           ; |AD_DA|CLKNUM[19]~37COUT1_119                    ; cout1            ;
+; |AD_DA|CLKNUM[20]~reg0                           ; |AD_DA|CLKNUM[20]~39                             ; cout             ;
+; |AD_DA|CLKNUM[21]~reg0                           ; |AD_DA|CLKNUM[21]~41                             ; cout0            ;
+; |AD_DA|CLKNUM[21]~reg0                           ; |AD_DA|CLKNUM[21]~41COUT1_121                    ; cout1            ;
+; |AD_DA|CLKNUM[22]~reg0                           ; |AD_DA|CLKNUM[22]~43                             ; cout0            ;
+; |AD_DA|CLKNUM[22]~reg0                           ; |AD_DA|CLKNUM[22]~43COUT1_123                    ; cout1            ;
+; |AD_DA|CLKNUM[23]~reg0                           ; |AD_DA|CLKNUM[23]~45                             ; cout0            ;
+; |AD_DA|CLKNUM[23]~reg0                           ; |AD_DA|CLKNUM[23]~45COUT1_125                    ; cout1            ;
 ; |AD_DA|CLKNUM[24]~reg0                           ; |AD_DA|CLKNUM[24]~47                             ; cout0            ;
 ; |AD_DA|CLKNUM[24]~reg0                           ; |AD_DA|CLKNUM[24]~47COUT1_127                    ; cout1            ;
 ; |AD_DA|CLKNUM[25]~reg0                           ; |AD_DA|CLKNUM[25]~49                             ; cout             ;
@@ -368,31 +503,99 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |AD_DA|CLKNUM[26]~reg0                           ; |AD_DA|CLKNUM[26]~51COUT1_129                    ; cout1            ;
 ; |AD_DA|CLKNUM[27]~reg0                           ; |AD_DA|CLKNUM[27]~53                             ; cout0            ;
 ; |AD_DA|CLKNUM[27]~reg0                           ; |AD_DA|CLKNUM[27]~53COUT1_131                    ; cout1            ;
-; |AD_DA|DI_1~8                                    ; |AD_DA|DI_1~8                                    ; combout          ;
 ; |AD_DA|CLKNUM[28]~reg0                           ; |AD_DA|CLKNUM[28]~55                             ; cout0            ;
 ; |AD_DA|CLKNUM[28]~reg0                           ; |AD_DA|CLKNUM[28]~55COUT1_133                    ; cout1            ;
 ; |AD_DA|CLKNUM[29]~reg0                           ; |AD_DA|CLKNUM[29]~57                             ; cout0            ;
 ; |AD_DA|CLKNUM[29]~reg0                           ; |AD_DA|CLKNUM[29]~57COUT1_135                    ; cout1            ;
 ; |AD_DA|CLKNUM[30]~reg0                           ; |AD_DA|CLKNUM[30]~59                             ; cout             ;
-; |AD_DA|DI_1~9                                    ; |AD_DA|DI_1~9                                    ; combout          ;
-; |AD_DA|ADC0832:u1|current_state.Start_Order_Wait ; |AD_DA|ADC0832:u1|current_state.Start_Order_Wait ; regout           ;
-; |AD_DA|ADC0832:u1|current_state.Data_Output      ; |AD_DA|ADC0832:u1|state_signal~4                 ; combout          ;
-; |AD_DA|ADC0832:u1|current_state.Data_Output      ; |AD_DA|ADC0832:u1|current_state.Data_Output      ; regout           ;
-; |AD_DA|ADC0832:u1|Mux8~0                         ; |AD_DA|ADC0832:u1|Mux8~0                         ; combout          ;
+; |AD_DA|DataA[2]                                  ; |AD_DA|DataA[2]                                  ; regout           ;
+; |AD_DA|DataA[3]                                  ; |AD_DA|DataA[3]                                  ; regout           ;
+; |AD_DA|DataA[4]                                  ; |AD_DA|DataA[4]                                  ; regout           ;
+; |AD_DA|DataA[5]                                  ; |AD_DA|DataA[5]                                  ; regout           ;
+; |AD_DA|DataA[6]                                  ; |AD_DA|DataA[6]                                  ; regout           ;
+; |AD_DA|DataA[7]                                  ; |AD_DA|DataA[7]                                  ; regout           ;
+; |AD_DA|DataB[0]                                  ; |AD_DA|DataB[0]                                  ; regout           ;
+; |AD_DA|DataB[1]                                  ; |AD_DA|DataB[1]                                  ; regout           ;
+; |AD_DA|DataB[2]                                  ; |AD_DA|DataB[2]                                  ; regout           ;
+; |AD_DA|Equal0~1                                  ; |AD_DA|Equal0~1                                  ; combout          ;
+; |AD_DA|Equal0~2                                  ; |AD_DA|Equal0~2                                  ; combout          ;
+; |AD_DA|Equal0~3                                  ; |AD_DA|Equal0~3                                  ; combout          ;
+; |AD_DA|Equal0~5                                  ; |AD_DA|Equal0~5                                  ; combout          ;
+; |AD_DA|Equal0~6                                  ; |AD_DA|Equal0~6                                  ; combout          ;
+; |AD_DA|Equal0~7                                  ; |AD_DA|Equal0~7                                  ; combout          ;
+; |AD_DA|Equal0~8                                  ; |AD_DA|Equal0~8                                  ; combout          ;
+; |AD_DA|COUNT[4]                                  ; |AD_DA|COUNT[4]~1                                ; cout0            ;
+; |AD_DA|COUNT[4]                                  ; |AD_DA|COUNT[4]~1COUT1_95                        ; cout1            ;
+; |AD_DA|COUNT[5]                                  ; |AD_DA|COUNT[5]~3                                ; cout             ;
+; |AD_DA|COUNT[6]                                  ; |AD_DA|COUNT[6]~5                                ; cout0            ;
+; |AD_DA|COUNT[6]                                  ; |AD_DA|COUNT[6]~5COUT1_97                        ; cout1            ;
+; |AD_DA|COUNT[7]                                  ; |AD_DA|COUNT[7]~7                                ; cout0            ;
+; |AD_DA|COUNT[7]                                  ; |AD_DA|COUNT[7]~7COUT1_99                        ; cout1            ;
+; |AD_DA|Equal8~0                                  ; |AD_DA|Equal8~0                                  ; combout          ;
+; |AD_DA|COUNT[8]                                  ; |AD_DA|COUNT[8]~9                                ; cout0            ;
+; |AD_DA|COUNT[8]                                  ; |AD_DA|COUNT[8]~9COUT1_101                       ; cout1            ;
+; |AD_DA|COUNT[9]                                  ; |AD_DA|COUNT[9]~11                               ; cout0            ;
+; |AD_DA|COUNT[9]                                  ; |AD_DA|COUNT[9]~11COUT1_103                      ; cout1            ;
+; |AD_DA|COUNT[10]                                 ; |AD_DA|COUNT[10]~13                              ; cout             ;
+; |AD_DA|COUNT[11]                                 ; |AD_DA|COUNT[11]~15                              ; cout0            ;
+; |AD_DA|COUNT[11]                                 ; |AD_DA|COUNT[11]~15COUT1_105                     ; cout1            ;
+; |AD_DA|Equal8~1                                  ; |AD_DA|Equal8~1                                  ; combout          ;
+; |AD_DA|COUNT[12]                                 ; |AD_DA|COUNT[12]~17                              ; cout0            ;
+; |AD_DA|COUNT[12]                                 ; |AD_DA|COUNT[12]~17COUT1_107                     ; cout1            ;
+; |AD_DA|COUNT[13]                                 ; |AD_DA|COUNT[13]~19                              ; cout0            ;
+; |AD_DA|COUNT[13]                                 ; |AD_DA|COUNT[13]~19COUT1_109                     ; cout1            ;
+; |AD_DA|COUNT[14]                                 ; |AD_DA|COUNT[14]~21                              ; cout0            ;
+; |AD_DA|COUNT[14]                                 ; |AD_DA|COUNT[14]~21COUT1_111                     ; cout1            ;
+; |AD_DA|COUNT[15]                                 ; |AD_DA|COUNT[15]~23                              ; cout             ;
+; |AD_DA|Equal8~2                                  ; |AD_DA|Equal8~2                                  ; combout          ;
+; |AD_DA|COUNT[16]                                 ; |AD_DA|COUNT[16]~25                              ; cout0            ;
+; |AD_DA|COUNT[16]                                 ; |AD_DA|COUNT[16]~25COUT1_113                     ; cout1            ;
+; |AD_DA|COUNT[17]                                 ; |AD_DA|COUNT[17]~27                              ; cout0            ;
+; |AD_DA|COUNT[17]                                 ; |AD_DA|COUNT[17]~27COUT1_115                     ; cout1            ;
+; |AD_DA|COUNT[18]                                 ; |AD_DA|COUNT[18]~29                              ; cout0            ;
+; |AD_DA|COUNT[18]                                 ; |AD_DA|COUNT[18]~29COUT1_117                     ; cout1            ;
+; |AD_DA|COUNT[19]                                 ; |AD_DA|COUNT[19]~31                              ; cout0            ;
+; |AD_DA|COUNT[19]                                 ; |AD_DA|COUNT[19]~31COUT1_119                     ; cout1            ;
+; |AD_DA|Equal8~3                                  ; |AD_DA|Equal8~3                                  ; combout          ;
+; |AD_DA|Equal8~4                                  ; |AD_DA|Equal8~4                                  ; combout          ;
+; |AD_DA|COUNT[20]                                 ; |AD_DA|COUNT[20]~33                              ; cout             ;
+; |AD_DA|COUNT[21]                                 ; |AD_DA|COUNT[21]~35                              ; cout0            ;
+; |AD_DA|COUNT[21]                                 ; |AD_DA|COUNT[21]~35COUT1_121                     ; cout1            ;
+; |AD_DA|COUNT[22]                                 ; |AD_DA|COUNT[22]~37                              ; cout0            ;
+; |AD_DA|COUNT[22]                                 ; |AD_DA|COUNT[22]~37COUT1_123                     ; cout1            ;
+; |AD_DA|COUNT[23]                                 ; |AD_DA|COUNT[23]~39                              ; cout0            ;
+; |AD_DA|COUNT[23]                                 ; |AD_DA|COUNT[23]~39COUT1_125                     ; cout1            ;
+; |AD_DA|Equal8~5                                  ; |AD_DA|Equal8~5                                  ; combout          ;
+; |AD_DA|COUNT[24]                                 ; |AD_DA|COUNT[24]~41                              ; cout0            ;
+; |AD_DA|COUNT[24]                                 ; |AD_DA|COUNT[24]~41COUT1_127                     ; cout1            ;
+; |AD_DA|Equal8~6                                  ; |AD_DA|Equal8~6                                  ; combout          ;
+; |AD_DA|COUNT[25]                                 ; |AD_DA|COUNT[25]~43                              ; cout             ;
+; |AD_DA|COUNT[26]                                 ; |AD_DA|COUNT[26]~45                              ; cout0            ;
+; |AD_DA|COUNT[26]                                 ; |AD_DA|COUNT[26]~45COUT1_129                     ; cout1            ;
+; |AD_DA|COUNT[27]                                 ; |AD_DA|COUNT[27]~47                              ; cout0            ;
+; |AD_DA|COUNT[27]                                 ; |AD_DA|COUNT[27]~47COUT1_131                     ; cout1            ;
+; |AD_DA|COUNT[28]                                 ; |AD_DA|COUNT[28]~49                              ; cout0            ;
+; |AD_DA|COUNT[28]                                 ; |AD_DA|COUNT[28]~49COUT1_133                     ; cout1            ;
+; |AD_DA|Equal8~7                                  ; |AD_DA|Equal8~7                                  ; combout          ;
+; |AD_DA|COUNT[29]                                 ; |AD_DA|COUNT[29]~51                              ; cout0            ;
+; |AD_DA|COUNT[29]                                 ; |AD_DA|COUNT[29]~51COUT1_135                     ; cout1            ;
+; |AD_DA|COUNT[30]                                 ; |AD_DA|COUNT[30]~53                              ; cout             ;
+; |AD_DA|Equal8~8                                  ; |AD_DA|Equal8~8                                  ; combout          ;
+; |AD_DA|Equal8~10                                 ; |AD_DA|Equal8~10                                 ; combout          ;
+; |AD_DA|DataB[0]~0                                ; |AD_DA|DataB[0]~0                                ; combout          ;
 ; |AD_DA|ADC0832:u1|Add0~1                         ; |AD_DA|ADC0832:u1|Add0~1                         ; combout          ;
+; |AD_DA|ADC0832:u1|Add0~2                         ; |AD_DA|ADC0832:u1|Add0~4COUT1_91                 ; cout1            ;
+; |AD_DA|ADC0832:u1|Add0~9                         ; |AD_DA|ADC0832:u1|Add0~11                        ; cout0            ;
+; |AD_DA|ADC0832:u1|Add0~9                         ; |AD_DA|ADC0832:u1|Add0~11COUT1_85                ; cout1            ;
 ; |AD_DA|ADC0832:u1|Add0~15                        ; |AD_DA|ADC0832:u1|Add0~15                        ; combout          ;
+; |AD_DA|ADC0832:u1|Add0~22                        ; |AD_DA|ADC0832:u1|Add0~22                        ; combout          ;
 ; |AD_DA|ADC0832:u1|Add0~29                        ; |AD_DA|ADC0832:u1|Add0~29                        ; combout          ;
+; |AD_DA|ADC0832:u1|Add0~30                        ; |AD_DA|ADC0832:u1|Add0~32                        ; cout0            ;
 ; |AD_DA|ADC0832:u1|Add0~36                        ; |AD_DA|ADC0832:u1|Add0~36                        ; combout          ;
 ; |AD_DA|ADC0832:u1|Add0~43                        ; |AD_DA|ADC0832:u1|Add0~43                        ; combout          ;
+; |AD_DA|ADC0832:u1|Add0~44                        ; |AD_DA|ADC0832:u1|Add0~46                        ; cout             ;
 ; |AD_DA|ADC0832:u1|Add0~50                        ; |AD_DA|ADC0832:u1|Add0~50                        ; combout          ;
-; |AD_DA|ADC0832:u1|Add0~51                        ; |AD_DA|ADC0832:u1|Add0~53                        ; cout0            ;
-; |AD_DA|ADC0832:u1|Add0~51                        ; |AD_DA|ADC0832:u1|Add0~53COUT1_81                ; cout1            ;
-; |AD_DA|ADC0832:u1|data[6]                        ; |AD_DA|ADC0832:u1|data[6]                        ; combout          ;
 ; |AD_DA|ADC0832:u1|data[2]                        ; |AD_DA|ADC0832:u1|data[2]                        ; combout          ;
-; |AD_DA|ADC0832:u1|data[3]                        ; |AD_DA|ADC0832:u1|data[3]                        ; combout          ;
-; |AD_DA|ADC0832:u1|data[5]                        ; |AD_DA|ADC0832:u1|data[5]                        ; combout          ;
-; |AD_DA|ADC0832:u1|data[7]                        ; |AD_DA|ADC0832:u1|data[7]                        ; combout          ;
-; |AD_DA|ADC0832:u1|data[4]                        ; |AD_DA|ADC0832:u1|data[4]                        ; combout          ;
 ; |AD_DA|CH1_1[6]                                  ; |AD_DA|CH1_1[6]~corein                           ; combout          ;
 ; |AD_DA|CH0_1[6]                                  ; |AD_DA|CH0_1[6]~corein                           ; combout          ;
 ; |AD_DA|CH1_1[2]                                  ; |AD_DA|CH1_1[2]~corein                           ; combout          ;
@@ -438,6 +641,45 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |AD_DA|CLKNUM[29]                                ; |AD_DA|CLKNUM[29]                                ; padio            ;
 ; |AD_DA|CLKNUM[30]                                ; |AD_DA|CLKNUM[30]                                ; padio            ;
 ; |AD_DA|CLKNUM[31]                                ; |AD_DA|CLKNUM[31]                                ; padio            ;
+; |AD_DA|DataA_output[2]                           ; |AD_DA|DataA_output[2]                           ; padio            ;
+; |AD_DA|DataA_output[3]                           ; |AD_DA|DataA_output[3]                           ; padio            ;
+; |AD_DA|DataA_output[4]                           ; |AD_DA|DataA_output[4]                           ; padio            ;
+; |AD_DA|DataA_output[5]                           ; |AD_DA|DataA_output[5]                           ; padio            ;
+; |AD_DA|DataA_output[6]                           ; |AD_DA|DataA_output[6]                           ; padio            ;
+; |AD_DA|DataA_output[7]                           ; |AD_DA|DataA_output[7]                           ; padio            ;
+; |AD_DA|DataB_output[0]                           ; |AD_DA|DataB_output[0]                           ; padio            ;
+; |AD_DA|DataB_output[1]                           ; |AD_DA|DataB_output[1]                           ; padio            ;
+; |AD_DA|DataB_output[2]                           ; |AD_DA|DataB_output[2]                           ; padio            ;
+; |AD_DA|Parallel_Data[2]                          ; |AD_DA|Parallel_Data[2]                          ; padio            ;
+; |AD_DA|Parallel_Data[3]                          ; |AD_DA|Parallel_Data[3]                          ; padio            ;
+; |AD_DA|Parallel_Data[4]                          ; |AD_DA|Parallel_Data[4]                          ; padio            ;
+; |AD_DA|Parallel_Data[5]                          ; |AD_DA|Parallel_Data[5]                          ; padio            ;
+; |AD_DA|Parallel_Data[6]                          ; |AD_DA|Parallel_Data[6]                          ; padio            ;
+; |AD_DA|Parallel_Data[7]                          ; |AD_DA|Parallel_Data[7]                          ; padio            ;
+; |AD_DA|Parallel_Data[8]                          ; |AD_DA|Parallel_Data[8]                          ; padio            ;
+; |AD_DA|Parallel_Data[9]                          ; |AD_DA|Parallel_Data[9]                          ; padio            ;
+; |AD_DA|Parallel_Data[10]                         ; |AD_DA|Parallel_Data[10]                         ; padio            ;
+; |AD_DA|Parallel_Data[11]                         ; |AD_DA|Parallel_Data[11]                         ; padio            ;
+; |AD_DA|Parallel_Data[12]                         ; |AD_DA|Parallel_Data[12]                         ; padio            ;
+; |AD_DA|Parallel_Data[13]                         ; |AD_DA|Parallel_Data[13]                         ; padio            ;
+; |AD_DA|Parallel_Data[14]                         ; |AD_DA|Parallel_Data[14]                         ; padio            ;
+; |AD_DA|Parallel_Data[15]                         ; |AD_DA|Parallel_Data[15]                         ; padio            ;
+; |AD_DA|Parallel_Data[16]                         ; |AD_DA|Parallel_Data[16]                         ; padio            ;
+; |AD_DA|Parallel_Data[17]                         ; |AD_DA|Parallel_Data[17]                         ; padio            ;
+; |AD_DA|Parallel_Data[18]                         ; |AD_DA|Parallel_Data[18]                         ; padio            ;
+; |AD_DA|Parallel_Data[19]                         ; |AD_DA|Parallel_Data[19]                         ; padio            ;
+; |AD_DA|Parallel_Data[20]                         ; |AD_DA|Parallel_Data[20]                         ; padio            ;
+; |AD_DA|Parallel_Data[21]                         ; |AD_DA|Parallel_Data[21]                         ; padio            ;
+; |AD_DA|Parallel_Data[22]                         ; |AD_DA|Parallel_Data[22]                         ; padio            ;
+; |AD_DA|Parallel_Data[23]                         ; |AD_DA|Parallel_Data[23]                         ; padio            ;
+; |AD_DA|Parallel_Data[24]                         ; |AD_DA|Parallel_Data[24]                         ; padio            ;
+; |AD_DA|Parallel_Data[25]                         ; |AD_DA|Parallel_Data[25]                         ; padio            ;
+; |AD_DA|Parallel_Data[26]                         ; |AD_DA|Parallel_Data[26]                         ; padio            ;
+; |AD_DA|Parallel_Data[27]                         ; |AD_DA|Parallel_Data[27]                         ; padio            ;
+; |AD_DA|Parallel_Data[28]                         ; |AD_DA|Parallel_Data[28]                         ; padio            ;
+; |AD_DA|Parallel_Data[29]                         ; |AD_DA|Parallel_Data[29]                         ; padio            ;
+; |AD_DA|Parallel_Data[30]                         ; |AD_DA|Parallel_Data[30]                         ; padio            ;
+; |AD_DA|Parallel_Data[31]                         ; |AD_DA|Parallel_Data[31]                         ; padio            ;
 +--------------------------------------------------+--------------------------------------------------+------------------+
 
 
@@ -454,18 +696,18 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
-    Info: Processing started: Mon Oct 09 17:22:24 2017
+    Info: Processing started: Sat Oct 14 14:51:45 2017
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off AD_DA -c AD_DA
 Info: Using vector source file "C:/Users/79864/Desktop/数电课程设计/Test01.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      40.58 %
-Info: Number of transitions in simulation is 637
+Info: Simulation coverage is      28.45 %
+Info: Number of transitions in simulation is 804
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 174 megabytes
-    Info: Processing ended: Mon Oct 09 17:22:24 2017
+    Info: Peak virtual memory: 175 megabytes
+    Info: Processing ended: Sat Oct 14 14:51:45 2017
     Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for AD_DA
-Mon Oct 09 17:22:15 2017
+Sat Oct 14 14:51:35 2017
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -44,13 +44,13 @@ applicable agreement for further details.
 +------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                           ;
 +-----------------------------+------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon Oct 09 17:22:15 2017    ;
+; Analysis & Synthesis Status ; Successful - Sat Oct 14 14:51:35 2017    ;
 ; Quartus II Version          ; 9.1 Build 222 10/21/2009 SJ Full Version ;
 ; Revision Name               ; AD_DA                                    ;
 ; Top-level Entity Name       ; AD_DA                                    ;
 ; Family                      ; MAX II                                   ;
-; Total logic elements        ; 118                                      ;
-; Total pins                  ; 104                                      ;
+; Total logic elements        ; 189                                      ;
+; Total pins                  ; 152                                      ;
 ; Total virtual pins          ; 0                                        ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                            ;
 +-----------------------------+------------------------------------------+
@@ -154,33 +154,33 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 118   ;
-;     -- Combinational with no register       ; 76    ;
-;     -- Register only                        ; 3     ;
-;     -- Combinational with a register        ; 39    ;
+; Total logic elements                        ; 189   ;
+;     -- Combinational with no register       ; 99    ;
+;     -- Register only                        ; 19    ;
+;     -- Combinational with a register        ; 71    ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 24    ;
-;     -- 3 input functions                    ; 36    ;
-;     -- 2 input functions                    ; 54    ;
+;     -- 4 input functions                    ; 40    ;
+;     -- 3 input functions                    ; 42    ;
+;     -- 2 input functions                    ; 87    ;
 ;     -- 1 input functions                    ; 1     ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 81    ;
-;     -- arithmetic mode                      ; 37    ;
+;     -- normal mode                          ; 122   ;
+;     -- arithmetic mode                      ; 67    ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
 ;     -- synchronous clear/load mode          ; 0     ;
 ;     -- asynchronous clear/load mode         ; 0     ;
 ;                                             ;       ;
-; Total registers                             ; 42    ;
-; Total logic cells in carry chains           ; 39    ;
-; I/O pins                                    ; 104   ;
+; Total registers                             ; 90    ;
+; Total logic cells in carry chains           ; 70    ;
+; I/O pins                                    ; 152   ;
 ; Maximum fan-out node                        ; clk_1 ;
-; Maximum fan-out                             ; 42    ;
-; Total fan-out                               ; 400   ;
-; Average fan-out                             ; 1.80  ;
+; Maximum fan-out                             ; 90    ;
+; Total fan-out                               ; 683   ;
+; Average fan-out                             ; 2.00  ;
 +---------------------------------------------+-------+
 
 
@@ -189,7 +189,7 @@ applicable agreement for further details.
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
-; |AD_DA                     ; 118 (43)    ; 42           ; 0          ; 104  ; 0            ; 76 (11)      ; 3 (0)             ; 39 (32)          ; 39 (31)         ; 0 (0)      ; |AD_DA              ; work         ;
+; |AD_DA                     ; 189 (114)   ; 90           ; 0          ; 152  ; 0            ; 99 (34)      ; 19 (16)           ; 71 (64)          ; 70 (62)         ; 0 (0)      ; |AD_DA              ; work         ;
 ;    |ADC0832:u1|            ; 75 (75)     ; 10           ; 0          ; 0    ; 0            ; 65 (65)      ; 3 (3)             ; 7 (7)            ; 8 (8)           ; 0 (0)      ; |AD_DA|ADC0832:u1   ; work         ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -214,6 +214,7 @@ Encoding Type:  One-Hot
 +-----------------------------------------------------+--------------------------------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal                        ; Free of Timing Hazards ;
 +-----------------------------------------------------+--------------------------------------------+------------------------+
+; DI_1                                                ; DI_1                                       ; yes                    ;
 ; ADC0832:u1|data[6]                                  ; ADC0832:u1|current_state.Data_Transform    ; yes                    ;
 ; ADC0832:u1|data[2]                                  ; ADC0832:u1|current_state.Data_Transform    ; yes                    ;
 ; ADC0832:u1|data[1]                                  ; ADC0832:u1|current_state.Data_Transform    ; yes                    ;
@@ -223,11 +224,12 @@ Encoding Type:  One-Hot
 ; ADC0832:u1|data[4]                                  ; ADC0832:u1|current_state.Data_Transform    ; yes                    ;
 ; ADC0832:u1|data[0]                                  ; ADC0832:u1|current_state.Data_Transform    ; yes                    ;
 ; ADC0832:u1|output_order                             ; ADC0832:u1|output_order                    ; yes                    ;
+; receive_order                                       ; WideOr0                                    ; yes                    ;
 ; ADC0832:u1|data_input_model[0]                      ; ADC0832:u1|current_state.Second_DI_Receive ; yes                    ;
 ; ADC0832:u1|data_input_model[1]                      ; ADC0832:u1|current_state.Second_DI_Receive ; yes                    ;
 ; ADC0832:u1|DI0                                      ; ADC0832:u1|current_state.Second_DI_Receive ; yes                    ;
 ; ADC0832:u1|DI1                                      ; ADC0832:u1|current_state.First_DI_Receive  ; yes                    ;
-; Number of user-specified and inferred latches = 13  ;                                            ;                        ;
+; Number of user-specified and inferred latches = 15  ;                                            ;                        ;
 +-----------------------------------------------------+--------------------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
@@ -237,12 +239,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 42    ;
+; Total registers                              ; 90    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 4     ;
+; Number of registers using Clock Enable       ; 51    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -252,7 +254,9 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |AD_DA|ADC0832:u1|Mux0     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |AD_DA|DataB[0]            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |AD_DA|DataA[2]            ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |AD_DA|ADC0832:u1|Mux3     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -271,7 +275,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
-    Info: Processing started: Mon Oct 09 17:22:13 2017
+    Info: Processing started: Sat Oct 14 14:51:34 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off AD_DA -c AD_DA
 Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info: Found 2 design units, including 1 entities, in source file adc0832.vhd
@@ -281,9 +285,17 @@ Info: Found 2 design units, including 1 entities, in source file ad_da.vhd
     Info: Found design unit 1: AD_DA-behavior
     Info: Found entity 1: AD_DA
 Info: Elaborating entity "AD_DA" for the top level hierarchy
-Warning (10540): VHDL Signal Declaration warning at AD_DA.vhd(20): used explicit default value for signal "CS_1" because signal was never assigned a value
-Warning (10492): VHDL Process Statement warning at AD_DA.vhd(76): signal "CS_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at AD_DA.vhd(77): signal "DI_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at AD_DA.vhd(96): signal "DataA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at AD_DA.vhd(97): signal "DataB" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at AD_DA.vhd(98): signal "CS_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at AD_DA.vhd(99): signal "DI_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at AD_DA.vhd(100): signal "DataA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at AD_DA.vhd(55): inferring latch(es) for signal or variable "receive_order", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at AD_DA.vhd(55): inferring latch(es) for signal or variable "DI_1", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at AD_DA.vhd(55): inferring latch(es) for signal or variable "CS_1", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "CS_1" at AD_DA.vhd(55)
+Info (10041): Inferred latch for "DI_1" at AD_DA.vhd(55)
+Info (10041): Inferred latch for "receive_order" at AD_DA.vhd(55)
 Info: Elaborating entity "ADC0832" for hierarchy "ADC0832:u1"
 Warning (10492): VHDL Process Statement warning at ADC0832.vhd(69): signal "DI1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at ADC0832.vhd(70): signal "DI0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -312,8 +324,36 @@ Info (10041): Inferred latch for "data_input_model[1]" at ADC0832.vhd(45)
 Info (10041): Inferred latch for "DI0" at ADC0832.vhd(45)
 Info (10041): Inferred latch for "DI1" at ADC0832.vhd(45)
 Info (10041): Inferred latch for "output_order" at ADC0832.vhd(45)
+Warning: Latch DI_1 has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal CLKNUM[0]~reg0
+Warning: Latch receive_order has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal CLKNUM[0]~reg0
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "CS_output" is stuck at GND
+    Warning (13410): Pin "Parallel_Data[8]" is stuck at GND
+    Warning (13410): Pin "Parallel_Data[9]" is stuck at GND
+    Warning (13410): Pin "Parallel_Data[10]" is stuck at GND
+    Warning (13410): Pin "Parallel_Data[11]" is stuck at GND
+    Warning (13410): Pin "Parallel_Data[12]" is stuck at GND
+    Warning (13410): Pin "Parallel_Data[13]" is stuck at GND
+    Warning (13410): Pin "Parallel_Data[14]" is stuck at GND
+    Warning (13410): Pin "Parallel_Data[15]" is stuck at GND
+    Warning (13410): Pin "Parallel_Data[16]" is stuck at GND
+    Warning (13410): Pin "Parallel_Data[17]" is stuck at GND
+    Warning (13410): Pin "Parallel_Data[18]" is stuck at GND
+    Warning (13410): Pin "Parallel_Data[19]" is stuck at GND
+    Warning (13410): Pin "Parallel_Data[20]" is stuck at GND
+    Warning (13410): Pin "Parallel_Data[21]" is stuck at GND
+    Warning (13410): Pin "Parallel_Data[22]" is stuck at GND
+    Warning (13410): Pin "Parallel_Data[23]" is stuck at GND
+    Warning (13410): Pin "Parallel_Data[24]" is stuck at GND
+    Warning (13410): Pin "Parallel_Data[25]" is stuck at GND
+    Warning (13410): Pin "Parallel_Data[26]" is stuck at GND
+    Warning (13410): Pin "Parallel_Data[27]" is stuck at GND
+    Warning (13410): Pin "Parallel_Data[28]" is stuck at GND
+    Warning (13410): Pin "Parallel_Data[29]" is stuck at GND
+    Warning (13410): Pin "Parallel_Data[30]" is stuck at GND
+    Warning (13410): Pin "Parallel_Data[31]" is stuck at GND
 Warning: Design contains 48 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "CH0_1[8]"
     Warning (15610): No output dependent on input pin "CH0_1[9]"
@@ -363,14 +403,14 @@ Warning: Design contains 48 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "CH1_1[29]"
     Warning (15610): No output dependent on input pin "CH1_1[30]"
     Warning (15610): No output dependent on input pin "CH1_1[31]"
-Info: Implemented 222 device resources after synthesis - the final resource count might be different
+Info: Implemented 341 device resources after synthesis - the final resource count might be different
     Info: Implemented 65 input pins
-    Info: Implemented 39 output pins
-    Info: Implemented 118 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 68 warnings
+    Info: Implemented 87 output pins
+    Info: Implemented 189 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 101 warnings
     Info: Peak virtual memory: 260 megabytes
-    Info: Processing ended: Mon Oct 09 17:22:15 2017
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Processing ended: Sat Oct 14 14:51:35 2017
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:03
 
 
