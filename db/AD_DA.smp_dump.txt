@@ -1,4 +1,12 @@
 
+State Machine - |AD_DA|current_state
+Name current_state.DAC_START current_state.DATA_CHECK current_state.DATA_RECEIVE current_state.ADC_START current_state.IDLE 
+current_state.IDLE 0 0 0 0 0 
+current_state.ADC_START 0 0 0 1 1 
+current_state.DATA_RECEIVE 0 0 1 0 1 
+current_state.DATA_CHECK 0 1 0 0 1 
+current_state.DAC_START 1 0 0 0 1 
+
 State Machine - |AD_DA|ADC0832:u1|current_state
 Name current_state.Data_Output current_state.Data_Transform current_state.Second_DI_Receive current_state.First_DI_Receive current_state.Start_Order_Wait 
 current_state.Start_Order_Wait 0 0 0 0 0 

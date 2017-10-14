@@ -64,263 +64,331 @@
  ---------------------------------------------------------------------------------
 
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
-CHIP  "AD_DA"  ASSIGNED TO AN: EPM1270F256C3
+CHIP  "AD_DA"  ASSIGNED TO AN: EPM2210F324A5
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
 GNDIO                        : A1        : gnd    :                   :         :           :                
-Parallel_Data[17]            : A2        : output : 3.3-V LVTTL       :         : 2         : N              
+Parallel_Data[30]            : A2        : output : 3.3-V LVTTL       :         : 2         : N              
 VCCIO2                       : A3        : power  :                   : 3.3V    : 2         :                
-CH1_1[30]                    : A4        : input  : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : A5        :        :                   :         : 2         :                
-CLKNUM[14]                   : A6        : output : 3.3-V LVTTL       :         : 2         : N              
-CLKNUM[21]                   : A7        : output : 3.3-V LVTTL       :         : 2         : N              
-CLKNUM[31]                   : A8        : output : 3.3-V LVTTL       :         : 2         : N              
-CH0_1[4]                     : A9        : input  : 3.3-V LVTTL       :         : 2         : N              
-state_signal_1[3]            : A10       : output : 3.3-V LVTTL       :         : 2         : N              
-DO_1                         : A11       : output : 3.3-V LVTTL       :         : 2         : N              
-DataB_output[1]              : A12       : output : 3.3-V LVTTL       :         : 2         : N              
-CH0_1[23]                    : A13       : input  : 3.3-V LVTTL       :         : 2         : N              
-VCCIO2                       : A14       : power  :                   : 3.3V    : 2         :                
-GND*                         : A15       :        :                   :         : 2         :                
-GNDIO                        : A16       : gnd    :                   :         :           :                
-Parallel_Data[3]             : B1        : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT3_output[30]            : A4        : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT1_output[8]             : A5        : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT1_output[23]            : A6        : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT3_output[17]            : A7        : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT2_output[20]            : A8        : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT2_output[24]            : A9        : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT2_output[18]            : A10       : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT2_output[27]            : A11       : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT2_output[30]            : A12       : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT3_output[2]             : A13       : output : 3.3-V LVTTL       :         : 2         : N              
+DataB_output[6]              : A14       : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT3_output[12]            : A15       : output : 3.3-V LVTTL       :         : 2         : N              
+VCCIO2                       : A16       : power  :                   : 3.3V    : 2         :                
+XFER                         : A17       : output : 3.3-V LVTTL       :         : 2         : N              
+GNDIO                        : A18       : gnd    :                   :         :           :                
+GND*                         : B1        :        :                   :         : 2         :                
 GNDIO                        : B2        : gnd    :                   :         :           :                
-GND*                         : B3        :        :                   :         : 2         :                
-CH0_1[19]                    : B4        : input  : 3.3-V LVTTL       :         : 2         : N              
-CLKNUM[1]                    : B5        : output : 3.3-V LVTTL       :         : 2         : N              
-CLKNUM[6]                    : B6        : output : 3.3-V LVTTL       :         : 2         : N              
-CLKNUM[17]                   : B7        : output : 3.3-V LVTTL       :         : 2         : N              
-CLKNUM[30]                   : B8        : output : 3.3-V LVTTL       :         : 2         : N              
-CH1_1[4]                     : B9        : input  : 3.3-V LVTTL       :         : 2         : N              
-CH1_1[7]                     : B10       : input  : 3.3-V LVTTL       :         : 2         : N              
-CH0_1[0]                     : B11       : input  : 3.3-V LVTTL       :         : 2         : N              
-CH0_1[2]                     : B12       : input  : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : B13       :        :                   :         : 2         :                
-Parallel_Data[30]            : B14       : output : 3.3-V LVTTL       :         : 2         : N              
-GNDIO                        : B15       : gnd    :                   :         :           :                
-CH1_1[9]                     : B16       : input  : 3.3-V LVTTL       :         : 2         : N              
+COUNT3_output[0]             : B3        : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT3_output[3]             : B4        : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT1_output[3]             : B5        : output : 3.3-V LVTTL       :         : 2         : N              
+CH1_1[24]                    : B6        : input  : 3.3-V LVTTL       :         : 2         : N              
+COUNT1_output[19]            : B7        : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT1_output[31]            : B8        : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT1_output[24]            : B9        : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT2_output[28]            : B10       : output : 3.3-V LVTTL       :         : 2         : N              
+D[5]                         : B11       : output : 3.3-V LVTTL       :         : 2         : N              
+Parallel_Data[10]            : B12       : output : 3.3-V LVTTL       :         : 2         : N              
+Parallel_Data[3]             : B13       : output : 3.3-V LVTTL       :         : 2         : N              
+DataB_output[2]              : B14       : output : 3.3-V LVTTL       :         : 2         : N              
+CH1_1[2]                     : B15       : input  : 3.3-V LVTTL       :         : 2         : N              
+CLKNUM[21]                   : B16       : output : 3.3-V LVTTL       :         : 2         : N              
+GNDIO                        : B17       : gnd    :                   :         :           :                
+CH1_1[21]                    : B18       : input  : 3.3-V LVTTL       :         : 2         : N              
 VCCIO1                       : C1        : power  :                   : 3.3V    : 1         :                
-DataB_output[5]              : C2        : output : 3.3-V LVTTL       :         : 1         : N              
-DataB_output[6]              : C3        : output : 3.3-V LVTTL       :         : 1         : N              
-Parallel_Data[29]            : C4        : output : 3.3-V LVTTL       :         : 2         : N              
-CH0_1[22]                    : C5        : input  : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : C6        :        :                   :         : 2         :                
-CH1_1[20]                    : C7        : input  : 3.3-V LVTTL       :         : 2         : N              
-CLKNUM[3]                    : C8        : output : 3.3-V LVTTL       :         : 2         : N              
-CH0_1[1]                     : C9        : input  : 3.3-V LVTTL       :         : 2         : N              
-CH1_1[19]                    : C10       : input  : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : C11       :        :                   :         : 2         :                
-CS_output                    : C12       : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : C13       :        :                   :         : 2         :                
-GND*                         : C14       :        :                   :         : 3         :                
-state_signal_1[0]            : C15       : output : 3.3-V LVTTL       :         : 3         : N              
-VCCIO3                       : C16       : power  :                   : 3.3V    : 3         :                
-DataA_output[3]              : D1        : output : 3.3-V LVTTL       :         : 1         : N              
-Parallel_Data[4]             : D2        : output : 3.3-V LVTTL       :         : 1         : N              
-DataB_output[7]              : D3        : output : 3.3-V LVTTL       :         : 1         : N              
-Parallel_Data[5]             : D4        : output : 3.3-V LVTTL       :         : 2         : N              
-DataA_output[5]              : D5        : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : D6        :        :                   :         : 2         :                
-CLKNUM[4]                    : D7        : output : 3.3-V LVTTL       :         : 2         : N              
-CLKNUM[5]                    : D8        : output : 3.3-V LVTTL       :         : 2         : N              
-CH1_1[1]                     : D9        : input  : 3.3-V LVTTL       :         : 2         : N              
-DataB_output[3]              : D10       : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : D11       :        :                   :         : 2         :                
-CH0_1[16]                    : D12       : input  : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : D13       :        :                   :         : 3         :                
-CH1_1[2]                     : D14       : input  : 3.3-V LVTTL       :         : 3         : N              
-CH0_1[29]                    : D15       : input  : 3.3-V LVTTL       :         : 3         : N              
-CH1_1[3]                     : D16       : input  : 3.3-V LVTTL       :         : 3         : N              
-CH0_1[8]                     : E1        : input  : 3.3-V LVTTL       :         : 1         : N              
-DataA_output[2]              : E2        : output : 3.3-V LVTTL       :         : 1         : N              
-Parallel_Data[0]             : E3        : output : 3.3-V LVTTL       :         : 1         : N              
-DataA_output[4]              : E4        : output : 3.3-V LVTTL       :         : 1         : N              
-DataA_output[0]              : E5        : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : E6        :        :                   :         : 2         :                
-CLKNUM[7]                    : E7        : output : 3.3-V LVTTL       :         : 2         : N              
-CLKNUM[27]                   : E8        : output : 3.3-V LVTTL       :         : 2         : N              
-state_signal_1[2]            : E9        : output : 3.3-V LVTTL       :         : 2         : N              
-DataB_output[4]              : E10       : output : 3.3-V LVTTL       :         : 2         : N              
-CH1_1[22]                    : E11       : input  : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : E12       :        :                   :         : 3         :                
-state_signal_1[1]            : E13       : output : 3.3-V LVTTL       :         : 3         : N              
-CH1_1[0]                     : E14       : input  : 3.3-V LVTTL       :         : 3         : N              
-CH0_1[3]                     : E15       : input  : 3.3-V LVTTL       :         : 3         : N              
-DataB_output[0]              : E16       : output : 3.3-V LVTTL       :         : 3         : N              
-CH0_1[5]                     : F1        : input  : 3.3-V LVTTL       :         : 1         : N              
-Parallel_Data[1]             : F2        : output : 3.3-V LVTTL       :         : 1         : N              
-Parallel_Data[23]            : F3        : output : 3.3-V LVTTL       :         : 1         : N              
-Parallel_Data[2]             : F4        : output : 3.3-V LVTTL       :         : 1         : N              
-DataA_output[1]              : F5        : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : F6        :        :                   :         : 1         :                
-CLKNUM[0]                    : F7        : output : 3.3-V LVTTL       :         : 2         : N              
-VCCIO2                       : F8        : power  :                   : 3.3V    : 2         :                
-VCCIO2                       : F9        : power  :                   : 3.3V    : 2         :                
-DI_output                    : F10       : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : F11       :        :                   :         : 3         :                
-CH1_1[21]                    : F12       : input  : 3.3-V LVTTL       :         : 3         : N              
-CH1_1[6]                     : F13       : input  : 3.3-V LVTTL       :         : 3         : N              
-CH0_1[6]                     : F14       : input  : 3.3-V LVTTL       :         : 3         : N              
-CLKNUM[19]                   : F15       : output : 3.3-V LVTTL       :         : 3         : N              
-CLKNUM[20]                   : F16       : output : 3.3-V LVTTL       :         : 3         : N              
-DataA_output[6]              : G1        : output : 3.3-V LVTTL       :         : 1         : N              
-CH1_1[15]                    : G2        : input  : 3.3-V LVTTL       :         : 1         : N              
-CH1_1[26]                    : G3        : input  : 3.3-V LVTTL       :         : 1         : N              
-Parallel_Data[21]            : G4        : output : 3.3-V LVTTL       :         : 1         : N              
-CH1_1[5]                     : G5        : input  : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : G6        :        :                   :         : 1         :                
-GNDIO                        : G7        : gnd    :                   :         :           :                
-GNDIO                        : G8        : gnd    :                   :         :           :                
-GNDIO                        : G9        : gnd    :                   :         :           :                
-GNDIO                        : G10       : gnd    :                   :         :           :                
-CLKNUM[23]                   : G11       : output : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : G12       :        :                   :         : 3         :                
-CLKNUM[26]                   : G13       : output : 3.3-V LVTTL       :         : 3         : N              
-Parallel_Data[15]            : G14       : output : 3.3-V LVTTL       :         : 3         : N              
-CH0_1[27]                    : G15       : input  : 3.3-V LVTTL       :         : 3         : N              
-Parallel_Data[18]            : G16       : output : 3.3-V LVTTL       :         : 3         : N              
-CH1_1[10]                    : H1        : input  : 3.3-V LVTTL       :         : 1         : N              
-Parallel_Data[10]            : H2        : output : 3.3-V LVTTL       :         : 1         : N              
-Parallel_Data[24]            : H3        : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : H4        :        :                   :         : 1         :                
-clk_1                        : H5        : input  : 3.3-V LVTTL       :         : 1         : N              
-VCCIO1                       : H6        : power  :                   : 3.3V    : 1         :                
+CH0_1[16]                    : C2        : input  : 3.3-V LVTTL       :         : 1         : N              
+CH0_1[29]                    : C3        : input  : 3.3-V LVTTL       :         : 1         : N              
+COUNT3_output[4]             : C4        : output : 3.3-V LVTTL       :         : 2         : N              
+Parallel_Data[9]             : C5        : output : 3.3-V LVTTL       :         : 2         : N              
+CH1_1[28]                    : C6        : input  : 3.3-V LVTTL       :         : 2         : N              
+COUNT1_output[9]             : C7        : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT2_output[2]             : C8        : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT1_output[27]            : C9        : output : 3.3-V LVTTL       :         : 2         : N              
+Parallel_Data[5]             : C10       : output : 3.3-V LVTTL       :         : 2         : N              
+Parallel_Data[21]            : C11       : output : 3.3-V LVTTL       :         : 2         : N              
+CLKNUM[2]                    : C12       : output : 3.3-V LVTTL       :         : 2         : N              
+Parallel_Data[14]            : C13       : output : 3.3-V LVTTL       :         : 2         : N              
+CLKNUM[1]                    : C14       : output : 3.3-V LVTTL       :         : 2         : N              
+CLKNUM[24]                   : C15       : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT3_output[20]            : C16       : output : 3.3-V LVTTL       :         : 3         : N              
+Parallel_Data[12]            : C17       : output : 3.3-V LVTTL       :         : 3         : N              
+VCCIO3                       : C18       : power  :                   : 3.3V    : 3         :                
+COUNT3_output[16]            : D1        : output : 3.3-V LVTTL       :         : 1         : N              
+Parallel_Data[13]            : D2        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : D3        :        :                   :         : 1         :                
+CH1_1[8]                     : D4        : input  : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : D5        :        :                   :         : 2         :                
+Parallel_Data[18]            : D6        : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT3_output[19]            : D7        : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT1_output[18]            : D8        : output : 3.3-V LVTTL       :         : 2         : N              
+Parallel_Data[2]             : D9        : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT2_output[29]            : D10       : output : 3.3-V LVTTL       :         : 2         : N              
+CH1_1[5]                     : D11       : input  : 3.3-V LVTTL       :         : 2         : N              
+CLKNUM[5]                    : D12       : output : 3.3-V LVTTL       :         : 2         : N              
+CH0_1[15]                    : D13       : input  : 3.3-V LVTTL       :         : 2         : N              
+CLKNUM[0]                    : D14       : output : 3.3-V LVTTL       :         : 2         : N              
+Parallel_Data[28]            : D15       : output : 3.3-V LVTTL       :         : 3         : N              
+COUNT3_output[25]            : D16       : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : D17       :        :                   :         : 3         :                
+CH1_1[27]                    : D18       : input  : 3.3-V LVTTL       :         : 3         : N              
+CH0_1[23]                    : E1        : input  : 3.3-V LVTTL       :         : 1         : N              
+CH0_1[11]                    : E2        : input  : 3.3-V LVTTL       :         : 1         : N              
+COUNT3_output[15]            : E3        : output : 3.3-V LVTTL       :         : 1         : N              
+Parallel_Data[20]            : E4        : output : 3.3-V LVTTL       :         : 1         : N              
+COUNT3_output[11]            : E5        : output : 3.3-V LVTTL       :         : 1         : N              
+Parallel_Data[31]            : E6        : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT1_output[2]             : E7        : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT1_output[21]            : E8        : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT1_output[30]            : E9        : output : 3.3-V LVTTL       :         : 2         : N              
+Parallel_Data[17]            : E10       : output : 3.3-V LVTTL       :         : 2         : N              
+CH1_1[9]                     : E11       : input  : 3.3-V LVTTL       :         : 2         : N              
+CH0_1[3]                     : E12       : input  : 3.3-V LVTTL       :         : 2         : N              
+Parallel_Data[26]            : E13       : output : 3.3-V LVTTL       :         : 2         : N              
+CH1_1[25]                    : E14       : input  : 3.3-V LVTTL       :         : 3         : N              
+COUNT3_output[6]             : E15       : output : 3.3-V LVTTL       :         : 3         : N              
+CH0_1[25]                    : E16       : input  : 3.3-V LVTTL       :         : 3         : N              
+Parallel_Data[23]            : E17       : output : 3.3-V LVTTL       :         : 3         : N              
+CH1_1[22]                    : E18       : input  : 3.3-V LVTTL       :         : 3         : N              
+CH0_1[8]                     : F1        : input  : 3.3-V LVTTL       :         : 1         : N              
+COUNT1_output[0]             : F2        : output : 3.3-V LVTTL       :         : 1         : N              
+COUNT1_output[16]            : F3        : output : 3.3-V LVTTL       :         : 1         : N              
+Parallel_Data[7]             : F4        : output : 3.3-V LVTTL       :         : 1         : N              
+Parallel_Data[8]             : F5        : output : 3.3-V LVTTL       :         : 1         : N              
+Parallel_Data[24]            : F6        : output : 3.3-V LVTTL       :         : 1         : N              
+Parallel_Data[19]            : F7        : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT1_output[12]            : F8        : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT2_output[3]             : F9        : output : 3.3-V LVTTL       :         : 2         : N              
+D[4]                         : F10       : output : 3.3-V LVTTL       :         : 2         : N              
+COUNT3_output[9]             : F11       : output : 3.3-V LVTTL       :         : 2         : N              
+CLKNUM[9]                    : F12       : output : 3.3-V LVTTL       :         : 2         : N              
+CH0_1[7]                     : F13       : input  : 3.3-V LVTTL       :         : 3         : N              
+COUNT3_output[1]             : F14       : output : 3.3-V LVTTL       :         : 3         : N              
+Parallel_Data[11]            : F15       : output : 3.3-V LVTTL       :         : 3         : N              
+COUNT3_output[5]             : F16       : output : 3.3-V LVTTL       :         : 3         : N              
+Parallel_Data[22]            : F17       : output : 3.3-V LVTTL       :         : 3         : N              
+CLKNUM[28]                   : F18       : output : 3.3-V LVTTL       :         : 3         : N              
+COUNT1_output[7]             : G1        : output : 3.3-V LVTTL       :         : 1         : N              
+COUNT3_output[31]            : G2        : output : 3.3-V LVTTL       :         : 1         : N              
+COUNT1_output[17]            : G3        : output : 3.3-V LVTTL       :         : 1         : N              
+COUNT1_output[15]            : G4        : output : 3.3-V LVTTL       :         : 1         : N              
+COUNT1_output[6]             : G5        : output : 3.3-V LVTTL       :         : 1         : N              
+COUNT1_output[20]            : G6        : output : 3.3-V LVTTL       :         : 1         : N              
+COUNT1_output[14]            : G7        : output : 3.3-V LVTTL       :         : 1         : N              
+GNDINT                       : G8        : gnd    :                   :         :           :                
+VCCIO2                       : G9        : power  :                   : 3.3V    : 2         :                
+VCCIO2                       : G10       : power  :                   : 3.3V    : 2         :                
+VCCINT                       : G11       : power  :                   : 2.5V/3.3V :           :                
+CLKNUM[17]                   : G12       : output : 3.3-V LVTTL       :         : 3         : N              
+CLKNUM[10]                   : G13       : output : 3.3-V LVTTL       :         : 3         : N              
+Parallel_Data[29]            : G14       : output : 3.3-V LVTTL       :         : 3         : N              
+CH1_1[13]                    : G15       : input  : 3.3-V LVTTL       :         : 3         : N              
+CH0_1[2]                     : G16       : input  : 3.3-V LVTTL       :         : 3         : N              
+CH0_1[0]                     : G17       : input  : 3.3-V LVTTL       :         : 3         : N              
+CH1_1[0]                     : G18       : input  : 3.3-V LVTTL       :         : 3         : N              
+COUNT1_output[26]            : H1        : output : 3.3-V LVTTL       :         : 1         : N              
+COUNT1_output[22]            : H2        : output : 3.3-V LVTTL       :         : 1         : N              
+COUNT1_output[4]             : H3        : output : 3.3-V LVTTL       :         : 1         : N              
+COUNT1_output[25]            : H4        : output : 3.3-V LVTTL       :         : 1         : N              
+COUNT1_output[28]            : H5        : output : 3.3-V LVTTL       :         : 1         : N              
+COUNT1_output[11]            : H6        : output : 3.3-V LVTTL       :         : 1         : N              
 GNDINT                       : H7        : gnd    :                   :         :           :                
-VCCINT                       : H8        : power  :                   : 2.5V/3.3V :           :                
-GNDINT                       : H9        : gnd    :                   :         :           :                
-VCCINT                       : H10       : power  :                   : 2.5V/3.3V :           :                
-VCCIO3                       : H11       : power  :                   : 3.3V    : 3         :                
-GND*                         : H12       :        :                   :         : 3         :                
-GND*                         : H13       :        :                   :         : 3         :                
-Parallel_Data[12]            : H14       : output : 3.3-V LVTTL       :         : 3         : N              
-CH0_1[30]                    : H15       : input  : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : H16       :        :                   :         : 3         :                
-CLKNUM[13]                   : J1        : output : 3.3-V LVTTL       :         : 1         : N              
-Parallel_Data[6]             : J2        : output : 3.3-V LVTTL       :         : 1         : N              
-CH0_1[18]                    : J3        : input  : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : J4        :        :                   :         : 1         :                
-CLKNUM[22]                   : J5        : output : 3.3-V LVTTL       :         : 1         : N              
-VCCIO1                       : J6        : power  :                   : 3.3V    : 1         :                
-VCCINT                       : J7        : power  :                   : 2.5V/3.3V :           :                
+GNDIO                        : H8        : gnd    :                   :         :           :                
+GNDIO                        : H9        : gnd    :                   :         :           :                
+GNDIO                        : H10       : gnd    :                   :         :           :                
+GNDIO                        : H11       : gnd    :                   :         :           :                
+VCCINT                       : H12       : power  :                   : 2.5V/3.3V :           :                
+DataA_output[3]              : H13       : output : 3.3-V LVTTL       :         : 3         : N              
+CH1_1[3]                     : H14       : input  : 3.3-V LVTTL       :         : 3         : N              
+CLKNUM[11]                   : H15       : output : 3.3-V LVTTL       :         : 3         : N              
+CH0_1[1]                     : H16       : input  : 3.3-V LVTTL       :         : 3         : N              
+DO_1                         : H17       : output : 3.3-V LVTTL       :         : 3         : N              
+D[1]                         : H18       : output : 3.3-V LVTTL       :         : 3         : N              
+COUNT3_output[27]            : J1        : output : 3.3-V LVTTL       :         : 1         : N              
+CH1_1[14]                    : J2        : input  : 3.3-V LVTTL       :         : 1         : N              
+COUNT3_output[23]            : J3        : output : 3.3-V LVTTL       :         : 1         : N              
+CH1_1[6]                     : J4        : input  : 3.3-V LVTTL       :         : 1         : N              
+COUNT3_output[13]            : J5        : output : 3.3-V LVTTL       :         : 1         : N              
+clk_1                        : J6        : input  : 3.3-V LVTTL       :         : 1         : N              
+VCCIO1                       : J7        : power  :                   : 3.3V    : 1         :                
 GNDINT                       : J8        : gnd    :                   :         :           :                
 VCCINT                       : J9        : power  :                   : 2.5V/3.3V :           :                
 GNDINT                       : J10       : gnd    :                   :         :           :                
-VCCIO3                       : J11       : power  :                   : 3.3V    : 3         :                
-GND*                         : J12       :        :                   :         : 3         :                
-Parallel_Data[26]            : J13       : output : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : J14       :        :                   :         : 3         :                
-Parallel_Data[22]            : J15       : output : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : J16       :        :                   :         : 3         :                
-CH1_1[12]                    : K1        : input  : 3.3-V LVTTL       :         : 1         : N              
-CH1_1[13]                    : K2        : input  : 3.3-V LVTTL       :         : 1         : N              
-CH1_1[11]                    : K3        : input  : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : K4        :        :                   :         : 1         :                
-CH1_1[28]                    : K5        : input  : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : K6        :        :                   :         : 1         :                
-GNDIO                        : K7        : gnd    :                   :         :           :                
-GNDIO                        : K8        : gnd    :                   :         :           :                
-GNDIO                        : K9        : gnd    :                   :         :           :                
-GNDIO                        : K10       : gnd    :                   :         :           :                
-CH0_1[13]                    : K11       : input  : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : K12       :        :                   :         : 3         :                
-GND*                         : K13       :        :                   :         : 3         :                
-Parallel_Data[31]            : K14       : output : 3.3-V LVTTL       :         : 3         : N              
-Parallel_Data[8]             : K15       : output : 3.3-V LVTTL       :         : 3         : N              
-CH0_1[17]                    : K16       : input  : 3.3-V LVTTL       :         : 3         : N              
-CH1_1[8]                     : L1        : input  : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : L2        :        :                   :         : 1         :                
-CH0_1[14]                    : L3        : input  : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : L4        :        :                   :         : 1         :                
-GND*                         : L5        :        :                   :         : 1         :                
-TDI                          : L6        : input  :                   :         : 1         :                
-CLKNUM[10]                   : L7        : output : 3.3-V LVTTL       :         : 4         : N              
-VCCIO4                       : L8        : power  :                   : 3.3V    : 4         :                
-VCCIO4                       : L9        : power  :                   : 3.3V    : 4         :                
-DataB_output[2]              : L10       : output : 3.3-V LVTTL       :         : 4         : N              
-CH0_1[12]                    : L11       : input  : 3.3-V LVTTL       :         : 3         : N              
-CH0_1[31]                    : L12       : input  : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : L13       :        :                   :         : 3         :                
-GND*                         : L14       :        :                   :         : 3         :                
-CH0_1[24]                    : L15       : input  : 3.3-V LVTTL       :         : 3         : N              
-Parallel_Data[27]            : L16       : output : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : M1        :        :                   :         : 1         :                
-GND*                         : M2        :        :                   :         : 1         :                
-GND*                         : M3        :        :                   :         : 1         :                
-CH1_1[27]                    : M4        : input  : 3.3-V LVTTL       :         : 1         : N              
-TDO                          : M5        : output :                   :         : 1         :                
-CH1_1[17]                    : M6        : input  : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : M7        :        :                   :         : 4         :                
-CLKNUM[24]                   : M8        : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : M9        :        :                   :         : 4         :                
-Parallel_Data[11]            : M10       : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : M11       :        :                   :         : 4         :                
-GND*                         : M12       :        :                   :         : 4         :                
-GND*                         : M13       :        :                   :         : 3         :                
-CH0_1[26]                    : M14       : input  : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : M15       :        :                   :         : 3         :                
-GND*                         : M16       :        :                   :         : 3         :                
-Parallel_Data[28]            : N1        : output : 3.3-V LVTTL       :         : 1         : N              
-CH1_1[23]                    : N2        : input  : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : N3        :        :                   :         : 1         :                
-TMS                          : N4        : input  :                   :         : 1         :                
-GND*                         : N5        :        :                   :         : 4         :                
-DataA_output[7]              : N6        : output : 3.3-V LVTTL       :         : 4         : N              
-CH0_1[15]                    : N7        : input  : 3.3-V LVTTL       :         : 4         : N              
-CLKNUM[8]                    : N8        : output : 3.3-V LVTTL       :         : 4         : N              
-CH0_1[7]                     : N9        : input  : 3.3-V LVTTL       :         : 4         : N              
-Parallel_Data[16]            : N10       : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : N11       :        :                   :         : 4         :                
-CH1_1[18]                    : N12       : input  : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : N13       :        :                   :         : 3         :                
-GND*                         : N14       :        :                   :         : 3         :                
-GND*                         : N15       :        :                   :         : 3         :                
-CH0_1[9]                     : N16       : input  : 3.3-V LVTTL       :         : 3         : N              
-VCCIO1                       : P1        : power  :                   : 3.3V    : 1         :                
-CH0_1[20]                    : P2        : input  : 3.3-V LVTTL       :         : 1         : N              
-TCK                          : P3        : input  :                   :         : 1         :                
-CH1_1[24]                    : P4        : input  : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : P5        :        :                   :         : 4         :                
-GND*                         : P6        :        :                   :         : 4         :                
-GND*                         : P7        :        :                   :         : 4         :                
-CLKNUM[2]                    : P8        : output : 3.3-V LVTTL       :         : 4         : N              
-CLKNUM[29]                   : P9        : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : P10       :        :                   :         : 4         :                
-GND*                         : P11       :        :                   :         : 4         :                
-GND*                         : P12       :        :                   :         : 4         :                
-CH1_1[14]                    : P13       : input  : 3.3-V LVTTL       :         : 4         : N              
-Parallel_Data[9]             : P14       : output : 3.3-V LVTTL       :         : 3         : N              
-CH0_1[11]                    : P15       : input  : 3.3-V LVTTL       :         : 3         : N              
-VCCIO3                       : P16       : power  :                   : 3.3V    : 3         :                
-CH0_1[21]                    : R1        : input  : 3.3-V LVTTL       :         : 4         : N              
-GNDIO                        : R2        : gnd    :                   :         :           :                
-GND*                         : R3        :        :                   :         : 4         :                
-Parallel_Data[7]             : R4        : output : 3.3-V LVTTL       :         : 4         : N              
-CH1_1[25]                    : R5        : input  : 3.3-V LVTTL       :         : 4         : N              
-Parallel_Data[25]            : R6        : output : 3.3-V LVTTL       :         : 4         : N              
-CLKNUM[11]                   : R7        : output : 3.3-V LVTTL       :         : 4         : N              
-CLKNUM[9]                    : R8        : output : 3.3-V LVTTL       :         : 4         : N              
-CLKNUM[16]                   : R9        : output : 3.3-V LVTTL       :         : 4         : N              
-Parallel_Data[13]            : R10       : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : R11       :        :                   :         : 4         :                
-CH0_1[28]                    : R12       : input  : 3.3-V LVTTL       :         : 4         : N              
-CH0_1[10]                    : R13       : input  : 3.3-V LVTTL       :         : 4         : N              
-Parallel_Data[19]            : R14       : output : 3.3-V LVTTL       :         : 4         : N              
-GNDIO                        : R15       : gnd    :                   :         :           :                
-GND*                         : R16       :        :                   :         : 4         :                
-GNDIO                        : T1        : gnd    :                   :         :           :                
-CH1_1[29]                    : T2        : input  : 3.3-V LVTTL       :         : 4         : N              
-VCCIO4                       : T3        : power  :                   : 3.3V    : 4         :                
-CH0_1[25]                    : T4        : input  : 3.3-V LVTTL       :         : 4         : N              
-Parallel_Data[20]            : T5        : output : 3.3-V LVTTL       :         : 4         : N              
-CLKNUM[12]                   : T6        : output : 3.3-V LVTTL       :         : 4         : N              
-CLKNUM[15]                   : T7        : output : 3.3-V LVTTL       :         : 4         : N              
-CLKNUM[18]                   : T8        : output : 3.3-V LVTTL       :         : 4         : N              
-CLKNUM[25]                   : T9        : output : 3.3-V LVTTL       :         : 4         : N              
-CLKNUM[28]                   : T10       : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : T11       :        :                   :         : 4         :                
-CH1_1[31]                    : T12       : input  : 3.3-V LVTTL       :         : 4         : N              
-CH1_1[16]                    : T13       : input  : 3.3-V LVTTL       :         : 4         : N              
-VCCIO4                       : T14       : power  :                   : 3.3V    : 4         :                
-Parallel_Data[14]            : T15       : output : 3.3-V LVTTL       :         : 4         : N              
-GNDIO                        : T16       : gnd    :                   :         :           :                
+VCCINT                       : J11       : power  :                   : 2.5V/3.3V :           :                
+VCCIO3                       : J12       : power  :                   : 3.3V    : 3         :                
+CLKNUM[25]                   : J13       : output : 3.3-V LVTTL       :         : 3         : N              
+CLKNUM[23]                   : J14       : output : 3.3-V LVTTL       :         : 3         : N              
+CLKNUM[29]                   : J15       : output : 3.3-V LVTTL       :         : 3         : N              
+state_signal_1[3]            : J16       : output : 3.3-V LVTTL       :         : 3         : N              
+CLKNUM[14]                   : J17       : output : 3.3-V LVTTL       :         : 3         : N              
+CLKNUM[18]                   : J18       : output : 3.3-V LVTTL       :         : 3         : N              
+COUNT3_output[24]            : K1        : output : 3.3-V LVTTL       :         : 1         : N              
+CS_output                    : K2        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : K3        :        :                   :         : 1         :                
+Parallel_Data[25]            : K4        : output : 3.3-V LVTTL       :         : 1         : N              
+CH1_1[18]                    : K5        : input  : 3.3-V LVTTL       :         : 1         : N              
+CH1_1[19]                    : K6        : input  : 3.3-V LVTTL       :         : 1         : N              
+VCCIO1                       : K7        : power  :                   : 3.3V    : 1         :                
+VCCINT                       : K8        : power  :                   : 2.5V/3.3V :           :                
+GNDINT                       : K9        : gnd    :                   :         :           :                
+VCCINT                       : K10       : power  :                   : 2.5V/3.3V :           :                
+GNDINT                       : K11       : gnd    :                   :         :           :                
+VCCIO3                       : K12       : power  :                   : 3.3V    : 3         :                
+CLKNUM[22]                   : K13       : output : 3.3-V LVTTL       :         : 3         : N              
+CLKNUM[7]                    : K14       : output : 3.3-V LVTTL       :         : 3         : N              
+CLKNUM[3]                    : K15       : output : 3.3-V LVTTL       :         : 3         : N              
+Parallel_Data[1]             : K16       : output : 3.3-V LVTTL       :         : 3         : N              
+DataB_output[3]              : K17       : output : 3.3-V LVTTL       :         : 3         : N              
+CLKNUM[30]                   : K18       : output : 3.3-V LVTTL       :         : 3         : N              
+CH1_1[15]                    : L1        : input  : 3.3-V LVTTL       :         : 1         : N              
+CH0_1[20]                    : L2        : input  : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : L3        :        :                   :         : 1         :                
+COUNT2_output[21]            : L4        : output : 3.3-V LVTTL       :         : 1         : N              
+COUNT2_output[19]            : L5        : output : 3.3-V LVTTL       :         : 1         : N              
+CLKNUM[13]                   : L6        : output : 3.3-V LVTTL       :         : 1         : N              
+VCCINT                       : L7        : power  :                   : 2.5V/3.3V :           :                
+GNDIO                        : L8        : gnd    :                   :         :           :                
+GNDIO                        : L9        : gnd    :                   :         :           :                
+GNDIO                        : L10       : gnd    :                   :         :           :                
+GNDIO                        : L11       : gnd    :                   :         :           :                
+GNDINT                       : L12       : gnd    :                   :         :           :                
+COUNT2_output[14]            : L13       : output : 3.3-V LVTTL       :         : 3         : N              
+CLKNUM[19]                   : L14       : output : 3.3-V LVTTL       :         : 3         : N              
+CLKNUM[31]                   : L15       : output : 3.3-V LVTTL       :         : 3         : N              
+CLKNUM[12]                   : L16       : output : 3.3-V LVTTL       :         : 3         : N              
+CLKNUM[27]                   : L17       : output : 3.3-V LVTTL       :         : 3         : N              
+DataB_output[5]              : L18       : output : 3.3-V LVTTL       :         : 3         : N              
+CH1_1[31]                    : M1        : input  : 3.3-V LVTTL       :         : 1         : N              
+COUNT2_output[17]            : M2        : output : 3.3-V LVTTL       :         : 1         : N              
+COUNT2_output[12]            : M3        : output : 3.3-V LVTTL       :         : 1         : N              
+CH1_1[26]                    : M4        : input  : 3.3-V LVTTL       :         : 1         : N              
+COUNT2_output[0]             : M5        : output : 3.3-V LVTTL       :         : 1         : N              
+COUNT2_output[1]             : M6        : output : 3.3-V LVTTL       :         : 1         : N              
+TDI                          : M7        : input  :                   :         : 1         :                
+VCCINT                       : M8        : power  :                   : 2.5V/3.3V :           :                
+VCCIO4                       : M9        : power  :                   : 3.3V    : 4         :                
+VCCIO4                       : M10       : power  :                   : 3.3V    : 4         :                
+GNDINT                       : M11       : gnd    :                   :         :           :                
+D[2]                         : M12       : output : 3.3-V LVTTL       :         : 3         : N              
+DataB_output[1]              : M13       : output : 3.3-V LVTTL       :         : 3         : N              
+COUNT3_output[28]            : M14       : output : 3.3-V LVTTL       :         : 3         : N              
+DataB_output[4]              : M15       : output : 3.3-V LVTTL       :         : 3         : N              
+Parallel_Data[0]             : M16       : output : 3.3-V LVTTL       :         : 3         : N              
+CH1_1[1]                     : M17       : input  : 3.3-V LVTTL       :         : 3         : N              
+CLKNUM[8]                    : M18       : output : 3.3-V LVTTL       :         : 3         : N              
+COUNT2_output[11]            : N1        : output : 3.3-V LVTTL       :         : 1         : N              
+WR2                          : N2        : output : 3.3-V LVTTL       :         : 1         : N              
+CH0_1[19]                    : N3        : input  : 3.3-V LVTTL       :         : 1         : N              
+COUNT2_output[6]             : N4        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : N5        :        :                   :         : 1         :                
+TDO                          : N6        : output :                   :         : 1         :                
+GND*                         : N7        :        :                   :         : 4         :                
+state_signal_1[1]            : N8        : output : 3.3-V LVTTL       :         : 4         : N              
+COUNT2_output[22]            : N9        : output : 3.3-V LVTTL       :         : 4         : N              
+DataA_output[4]              : N10       : output : 3.3-V LVTTL       :         : 4         : N              
+D[3]                         : N11       : output : 3.3-V LVTTL       :         : 4         : N              
+DataB_output[0]              : N12       : output : 3.3-V LVTTL       :         : 4         : N              
+CLKNUM[26]                   : N13       : output : 3.3-V LVTTL       :         : 3         : N              
+CH0_1[6]                     : N14       : input  : 3.3-V LVTTL       :         : 3         : N              
+CH0_1[27]                    : N15       : input  : 3.3-V LVTTL       :         : 3         : N              
+CLKNUM[16]                   : N16       : output : 3.3-V LVTTL       :         : 3         : N              
+CLKNUM[15]                   : N17       : output : 3.3-V LVTTL       :         : 3         : N              
+DataA_output[7]              : N18       : output : 3.3-V LVTTL       :         : 3         : N              
+COUNT2_output[7]             : P1        : output : 3.3-V LVTTL       :         : 1         : N              
+COUNT3_output[10]            : P2        : output : 3.3-V LVTTL       :         : 1         : N              
+CH0_1[17]                    : P3        : input  : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : P4        :        :                   :         : 1         :                
+TMS                          : P5        : input  :                   :         : 1         :                
+CH0_1[28]                    : P6        : input  : 3.3-V LVTTL       :         : 4         : N              
+COUNT1_output[1]             : P7        : output : 3.3-V LVTTL       :         : 4         : N              
+COUNT2_output[26]            : P8        : output : 3.3-V LVTTL       :         : 4         : N              
+COUNT2_output[9]             : P9        : output : 3.3-V LVTTL       :         : 4         : N              
+COUNT2_output[16]            : P10       : output : 3.3-V LVTTL       :         : 4         : N              
+Parallel_Data[4]             : P11       : output : 3.3-V LVTTL       :         : 4         : N              
+CH1_1[7]                     : P12       : input  : 3.3-V LVTTL       :         : 4         : N              
+CH1_1[29]                    : P13       : input  : 3.3-V LVTTL       :         : 4         : N              
+CH0_1[22]                    : P14       : input  : 3.3-V LVTTL       :         : 3         : N              
+CH0_1[14]                    : P15       : input  : 3.3-V LVTTL       :         : 3         : N              
+CH1_1[16]                    : P16       : input  : 3.3-V LVTTL       :         : 3         : N              
+CLKNUM[4]                    : P17       : output : 3.3-V LVTTL       :         : 3         : N              
+DataA_output[1]              : P18       : output : 3.3-V LVTTL       :         : 3         : N              
+CH0_1[24]                    : R1        : input  : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : R2        :        :                   :         : 1         :                
+GND*                         : R3        :        :                   :         : 1         :                
+TCK                          : R4        : input  :                   :         : 1         :                
+CH1_1[30]                    : R5        : input  : 3.3-V LVTTL       :         : 4         : N              
+CH0_1[30]                    : R6        : input  : 3.3-V LVTTL       :         : 4         : N              
+COUNT1_output[13]            : R7        : output : 3.3-V LVTTL       :         : 4         : N              
+COUNT2_output[4]             : R8        : output : 3.3-V LVTTL       :         : 4         : N              
+COUNT2_output[8]             : R9        : output : 3.3-V LVTTL       :         : 4         : N              
+Parallel_Data[6]             : R10       : output : 3.3-V LVTTL       :         : 4         : N              
+CH0_1[4]                     : R11       : input  : 3.3-V LVTTL       :         : 4         : N              
+DataA_output[0]              : R12       : output : 3.3-V LVTTL       :         : 4         : N              
+CH0_1[31]                    : R13       : input  : 3.3-V LVTTL       :         : 4         : N              
+CH1_1[20]                    : R14       : input  : 3.3-V LVTTL       :         : 4         : N              
+CH0_1[18]                    : R15       : input  : 3.3-V LVTTL       :         : 3         : N              
+COUNT3_output[26]            : R16       : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : R17       :        :                   :         : 3         :                
+D[7]                         : R18       : output : 3.3-V LVTTL       :         : 3         : N              
+VCCIO1                       : T1        : power  :                   : 3.3V    : 1         :                
+Parallel_Data[16]            : T2        : output : 3.3-V LVTTL       :         : 1         : N              
+CH0_1[26]                    : T3        : input  : 3.3-V LVTTL       :         : 1         : N              
+COUNT3_output[8]             : T4        : output : 3.3-V LVTTL       :         : 4         : N              
+CH1_1[11]                    : T5        : input  : 3.3-V LVTTL       :         : 4         : N              
+CH0_1[10]                    : T6        : input  : 3.3-V LVTTL       :         : 4         : N              
+COUNT1_output[5]             : T7        : output : 3.3-V LVTTL       :         : 4         : N              
+COUNT2_output[15]            : T8        : output : 3.3-V LVTTL       :         : 4         : N              
+COUNT2_output[23]            : T9        : output : 3.3-V LVTTL       :         : 4         : N              
+D[6]                         : T10       : output : 3.3-V LVTTL       :         : 4         : N              
+CH0_1[12]                    : T11       : input  : 3.3-V LVTTL       :         : 4         : N              
+CLKNUM[6]                    : T12       : output : 3.3-V LVTTL       :         : 4         : N              
+CH1_1[23]                    : T13       : input  : 3.3-V LVTTL       :         : 4         : N              
+DataB_output[7]              : T14       : output : 3.3-V LVTTL       :         : 4         : N              
+DataA_output[2]              : T15       : output : 3.3-V LVTTL       :         : 4         : N              
+CH0_1[13]                    : T16       : input  : 3.3-V LVTTL       :         : 3         : N              
+COUNT3_output[22]            : T17       : output : 3.3-V LVTTL       :         : 3         : N              
+VCCIO3                       : T18       : power  :                   : 3.3V    : 3         :                
+CH1_1[10]                    : U1        : input  : 3.3-V LVTTL       :         : 4         : N              
+GNDIO                        : U2        : gnd    :                   :         :           :                
+COUNT3_output[14]            : U3        : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : U4        :        :                   :         : 4         :                
+COUNT1_output[10]            : U5        : output : 3.3-V LVTTL       :         : 4         : N              
+Parallel_Data[27]            : U6        : output : 3.3-V LVTTL       :         : 4         : N              
+COUNT2_output[5]             : U7        : output : 3.3-V LVTTL       :         : 4         : N              
+state_signal_1[0]            : U8        : output : 3.3-V LVTTL       :         : 4         : N              
+COUNT2_output[13]            : U9        : output : 3.3-V LVTTL       :         : 4         : N              
+COUNT2_output[25]            : U10       : output : 3.3-V LVTTL       :         : 4         : N              
+WR1                          : U11       : output : 3.3-V LVTTL       :         : 4         : N              
+DataA_output[6]              : U12       : output : 3.3-V LVTTL       :         : 4         : N              
+CH0_1[5]                     : U13       : input  : 3.3-V LVTTL       :         : 4         : N              
+D[0]                         : U14       : output : 3.3-V LVTTL       :         : 4         : N              
+CH0_1[9]                     : U15       : input  : 3.3-V LVTTL       :         : 4         : N              
+CLKNUM[20]                   : U16       : output : 3.3-V LVTTL       :         : 4         : N              
+GNDIO                        : U17       : gnd    :                   :         :           :                
+COUNT3_output[7]             : U18       : output : 3.3-V LVTTL       :         : 4         : N              
+GNDIO                        : V1        : gnd    :                   :         :           :                
+CH1_1[17]                    : V2        : input  : 3.3-V LVTTL       :         : 4         : N              
+VCCIO4                       : V3        : power  :                   : 3.3V    : 4         :                
+COUNT3_output[21]            : V4        : output : 3.3-V LVTTL       :         : 4         : N              
+CH0_1[21]                    : V5        : input  : 3.3-V LVTTL       :         : 4         : N              
+state_signal_1[2]            : V6        : output : 3.3-V LVTTL       :         : 4         : N              
+COUNT1_output[29]            : V7        : output : 3.3-V LVTTL       :         : 4         : N              
+COUNT2_output[10]            : V8        : output : 3.3-V LVTTL       :         : 4         : N              
+Parallel_Data[15]            : V9        : output : 3.3-V LVTTL       :         : 4         : N              
+COUNT2_output[31]            : V10       : output : 3.3-V LVTTL       :         : 4         : N              
+DataA_output[5]              : V11       : output : 3.3-V LVTTL       :         : 4         : N              
+DI_output                    : V12       : output : 3.3-V LVTTL       :         : 4         : N              
+CH1_1[4]                     : V13       : input  : 3.3-V LVTTL       :         : 4         : N              
+CH1_1[12]                    : V14       : input  : 3.3-V LVTTL       :         : 4         : N              
+COUNT3_output[18]            : V15       : output : 3.3-V LVTTL       :         : 4         : N              
+VCCIO4                       : V16       : power  :                   : 3.3V    : 4         :                
+COUNT3_output[29]            : V17       : output : 3.3-V LVTTL       :         : 4         : N              
+GNDIO                        : V18       : gnd    :                   :         :           :                

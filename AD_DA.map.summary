@@ -1,9 +1,9 @@
-Analysis & Synthesis Status : Successful - Sat Oct 14 14:51:35 2017
+Analysis & Synthesis Status : Successful - Sat Oct 14 22:56:33 2017
 Quartus II Version : 9.1 Build 222 10/21/2009 SJ Full Version
 Revision Name : AD_DA
 Top-level Entity Name : AD_DA
 Family : MAX II
-Total logic elements : 189
-Total pins : 152
+Total logic elements : 271
+Total pins : 259
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )
