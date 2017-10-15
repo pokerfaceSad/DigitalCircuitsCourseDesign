@@ -51,3 +51,4 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Main.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Test01.vwf
 set_global_assignment -name VHDL_FILE ADC0832.vhd
 set_global_assignment -name VHDL_FILE AD_DA.vhd
+set_global_assignment -name MISC_FILE "C:/Users/79864/Desktop/数电课程设计/AD_DA.dpf"

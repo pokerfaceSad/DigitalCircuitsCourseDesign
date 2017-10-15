@@ -1,5 +1,5 @@
 Analysis & Synthesis report for AD_DA
-Sat Oct 14 22:56:33 2017
+Sun Oct 15 14:23:41 2017
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -45,13 +45,13 @@ applicable agreement for further details.
 +------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                           ;
 +-----------------------------+------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat Oct 14 22:56:33 2017    ;
+; Analysis & Synthesis Status ; Successful - Sun Oct 15 14:23:41 2017    ;
 ; Quartus II Version          ; 9.1 Build 222 10/21/2009 SJ Full Version ;
 ; Revision Name               ; AD_DA                                    ;
 ; Top-level Entity Name       ; AD_DA                                    ;
 ; Family                      ; MAX II                                   ;
-; Total logic elements        ; 271                                      ;
-; Total pins                  ; 259                                      ;
+; Total logic elements        ; 239                                      ;
+; Total pins                  ; 131                                      ;
 ; Total virtual pins          ; 0                                        ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                            ;
 +-----------------------------+------------------------------------------+
@@ -155,33 +155,33 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 271   ;
+; Total logic elements                        ; 239   ;
 ;     -- Combinational with no register       ; 143   ;
 ;     -- Register only                        ; 19    ;
-;     -- Combinational with a register        ; 109   ;
+;     -- Combinational with a register        ; 77    ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
 ;     -- 4 input functions                    ; 46    ;
 ;     -- 3 input functions                    ; 73    ;
-;     -- 2 input functions                    ; 130   ;
-;     -- 1 input functions                    ; 2     ;
+;     -- 2 input functions                    ; 99    ;
+;     -- 1 input functions                    ; 1     ;
 ;     -- 0 input functions                    ; 1     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 174   ;
-;     -- arithmetic mode                      ; 97    ;
+;     -- normal mode                          ; 172   ;
+;     -- arithmetic mode                      ; 67    ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
 ;     -- synchronous clear/load mode          ; 0     ;
 ;     -- asynchronous clear/load mode         ; 0     ;
 ;                                             ;       ;
-; Total registers                             ; 128   ;
-; Total logic cells in carry chains           ; 101   ;
-; I/O pins                                    ; 259   ;
+; Total registers                             ; 96    ;
+; Total logic cells in carry chains           ; 70    ;
+; I/O pins                                    ; 131   ;
 ; Maximum fan-out node                        ; clk_1 ;
-; Maximum fan-out                             ; 128   ;
-; Total fan-out                               ; 1054  ;
-; Average fan-out                             ; 1.99  ;
+; Maximum fan-out                             ; 96    ;
+; Total fan-out                               ; 863   ;
+; Average fan-out                             ; 2.33  ;
 +---------------------------------------------+-------+
 
 
@@ -190,7 +190,7 @@ applicable agreement for further details.
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
-; |AD_DA                     ; 271 (196)   ; 128          ; 0          ; 259  ; 0            ; 143 (78)     ; 19 (16)           ; 109 (102)        ; 101 (93)        ; 0 (0)      ; |AD_DA              ; work         ;
+; |AD_DA                     ; 239 (164)   ; 96           ; 0          ; 131  ; 0            ; 143 (78)     ; 19 (16)           ; 77 (70)          ; 70 (62)         ; 0 (0)      ; |AD_DA              ; work         ;
 ;    |ADC0832:u1|            ; 75 (75)     ; 10           ; 0          ; 0    ; 0            ; 65 (65)      ; 3 (3)             ; 7 (7)            ; 8 (8)           ; 0 (0)      ; |AD_DA|ADC0832:u1   ; work         ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -229,38 +229,38 @@ Encoding Type:  One-Hot
 +-----------------------------------------------------+--------------------------------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal                        ; Free of Timing Hazards ;
 +-----------------------------------------------------+--------------------------------------------+------------------------+
-; Parallel_Data[0]$latch                              ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[1]$latch                              ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[2]$latch                              ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[3]$latch                              ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[4]$latch                              ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[5]$latch                              ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[6]$latch                              ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[7]$latch                              ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[8]$latch                              ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[9]$latch                              ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[10]$latch                             ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[11]$latch                             ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[12]$latch                             ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[13]$latch                             ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[14]$latch                             ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[15]$latch                             ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[16]$latch                             ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[17]$latch                             ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[18]$latch                             ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[19]$latch                             ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[20]$latch                             ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[21]$latch                             ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[22]$latch                             ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[23]$latch                             ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[24]$latch                             ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[25]$latch                             ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[26]$latch                             ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[27]$latch                             ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[28]$latch                             ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[29]$latch                             ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[30]$latch                             ; current_state.DATA_CHECK                   ; yes                    ;
-; Parallel_Data[31]$latch                             ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[0]$latch                                     ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[1]$latch                                     ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[2]$latch                                     ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[3]$latch                                     ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[4]$latch                                     ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[5]$latch                                     ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[6]$latch                                     ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[7]$latch                                     ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[8]$latch                                     ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[9]$latch                                     ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[10]$latch                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[11]$latch                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[12]$latch                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[13]$latch                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[14]$latch                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[15]$latch                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[16]$latch                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[17]$latch                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[18]$latch                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[19]$latch                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[20]$latch                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[21]$latch                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[22]$latch                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[23]$latch                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[24]$latch                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[25]$latch                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[26]$latch                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[27]$latch                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[28]$latch                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[29]$latch                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[30]$latch                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; stu_no[31]$latch                                    ; current_state.DATA_CHECK                   ; yes                    ;
 ; D[0]$latch                                          ; current_state.DAC_START                    ; yes                    ;
 ; D[1]$latch                                          ; current_state.DAC_START                    ; yes                    ;
 ; D[2]$latch                                          ; current_state.DAC_START                    ; yes                    ;
@@ -287,13 +287,13 @@ Encoding Type:  One-Hot
 ; temp[5]                                             ; temp[0]                                    ; yes                    ;
 ; temp[6]                                             ; temp[0]                                    ; yes                    ;
 ; temp[7]                                             ; temp[0]                                    ; yes                    ;
-; Serial_Data[0]                                      ; current_state.DATA_CHECK                   ; yes                    ;
-; Serial_Data[1]                                      ; current_state.DATA_CHECK                   ; yes                    ;
-; Serial_Data[2]                                      ; current_state.DATA_CHECK                   ; yes                    ;
-; Serial_Data[3]                                      ; current_state.DATA_CHECK                   ; yes                    ;
-; Serial_Data[4]                                      ; current_state.DATA_CHECK                   ; yes                    ;
-; Serial_Data[5]                                      ; current_state.DATA_CHECK                   ; yes                    ;
-; Serial_Data[6]                                      ; current_state.DATA_CHECK                   ; yes                    ;
+; Parallel_Data[0]                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; Parallel_Data[1]                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; Parallel_Data[2]                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; Parallel_Data[3]                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; Parallel_Data[4]                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; Parallel_Data[5]                                    ; current_state.DATA_CHECK                   ; yes                    ;
+; Parallel_Data[6]                                    ; current_state.DATA_CHECK                   ; yes                    ;
 ; ADC0832:u1|data_input_model[0]                      ; ADC0832:u1|current_state.Second_DI_Receive ; yes                    ;
 ; ADC0832:u1|data_input_model[1]                      ; ADC0832:u1|current_state.Second_DI_Receive ; yes                    ;
 ; ADC0832:u1|DI0                                      ; ADC0832:u1|current_state.Second_DI_Receive ; yes                    ;
@@ -308,7 +308,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 128   ;
+; Total registers                              ; 96    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -344,7 +344,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
-    Info: Processing started: Sat Oct 14 22:56:31 2017
+    Info: Processing started: Sun Oct 15 14:23:37 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off AD_DA -c AD_DA
 Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info: Found 2 design units, including 1 entities, in source file adc0832.vhd
@@ -354,113 +354,112 @@ Info: Found 2 design units, including 1 entities, in source file ad_da.vhd
     Info: Found design unit 1: AD_DA-behavior
     Info: Found entity 1: AD_DA
 Info: Elaborating entity "AD_DA" for the top level hierarchy
-Warning (10542): VHDL Variable Declaration warning at AD_DA.vhd(67): used initial value expression for variable "COUNT3" because variable was never assigned a value
-Warning (10492): VHDL Process Statement warning at AD_DA.vhd(109): signal "DataA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at AD_DA.vhd(109): signal "DataB" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at AD_DA.vhd(110): signal "DataA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at AD_DA.vhd(111): signal "temp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at AD_DA.vhd(118): signal "temp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at AD_DA.vhd(120): signal "Serial_Data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at AD_DA.vhd(129): signal "DataA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at AD_DA.vhd(130): signal "DataB" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at AD_DA.vhd(134): signal "CS_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at AD_DA.vhd(135): signal "DI_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at AD_DA.vhd(79): inferring latch(es) for signal or variable "CS_1", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at AD_DA.vhd(79): inferring latch(es) for signal or variable "WR1", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at AD_DA.vhd(79): inferring latch(es) for signal or variable "receive_order", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at AD_DA.vhd(79): inferring latch(es) for signal or variable "start_order", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at AD_DA.vhd(79): inferring latch(es) for signal or variable "temp", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at AD_DA.vhd(79): inferring latch(es) for signal or variable "Parallel_Data", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at AD_DA.vhd(79): inferring latch(es) for signal or variable "Serial_Data", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at AD_DA.vhd(79): inferring latch(es) for signal or variable "D", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at AD_DA.vhd(79): inferring latch(es) for signal or variable "WR2", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at AD_DA.vhd(79): inferring latch(es) for signal or variable "XFER", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "XFER" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "WR2" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "D[0]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "D[1]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "D[2]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "D[3]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "D[4]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "D[5]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "D[6]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "D[7]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Serial_Data[0]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Serial_Data[1]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Serial_Data[2]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Serial_Data[3]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Serial_Data[4]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Serial_Data[5]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Serial_Data[6]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Serial_Data[7]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[0]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[1]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[2]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[3]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[4]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[5]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[6]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[7]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[8]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[9]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[10]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[11]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[12]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[13]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[14]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[15]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[16]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[17]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[18]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[19]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[20]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[21]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[22]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[23]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[24]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[25]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[26]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[27]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[28]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[29]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[30]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "Parallel_Data[31]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[0]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[1]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[2]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[3]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[4]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[5]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[6]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[7]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[8]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[9]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[10]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[11]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[12]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[13]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[14]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[15]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[16]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[17]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[18]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[19]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[20]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[21]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[22]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[23]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[24]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[25]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[26]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[27]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[28]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[29]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[30]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "temp[31]" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "start_order" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "receive_order" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "WR1" at AD_DA.vhd(79)
-Info (10041): Inferred latch for "CS_1" at AD_DA.vhd(79)
+Warning (10492): VHDL Process Statement warning at AD_DA.vhd(103): signal "DataA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at AD_DA.vhd(103): signal "DataB" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at AD_DA.vhd(104): signal "DataA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at AD_DA.vhd(105): signal "temp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at AD_DA.vhd(112): signal "temp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at AD_DA.vhd(115): signal "Parallel_Data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at AD_DA.vhd(124): signal "DataA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at AD_DA.vhd(125): signal "DataB" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at AD_DA.vhd(126): signal "CS_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at AD_DA.vhd(127): signal "DI_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at AD_DA.vhd(70): inferring latch(es) for signal or variable "CS_1", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at AD_DA.vhd(70): inferring latch(es) for signal or variable "WR1", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at AD_DA.vhd(70): inferring latch(es) for signal or variable "receive_order", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at AD_DA.vhd(70): inferring latch(es) for signal or variable "start_order", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at AD_DA.vhd(70): inferring latch(es) for signal or variable "temp", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at AD_DA.vhd(70): inferring latch(es) for signal or variable "stu_no", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at AD_DA.vhd(70): inferring latch(es) for signal or variable "Parallel_Data", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at AD_DA.vhd(70): inferring latch(es) for signal or variable "D", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at AD_DA.vhd(70): inferring latch(es) for signal or variable "WR2", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at AD_DA.vhd(70): inferring latch(es) for signal or variable "XFER", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "XFER" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "WR2" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "D[0]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "D[1]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "D[2]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "D[3]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "D[4]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "D[5]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "D[6]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "D[7]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "Parallel_Data[0]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "Parallel_Data[1]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "Parallel_Data[2]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "Parallel_Data[3]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "Parallel_Data[4]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "Parallel_Data[5]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "Parallel_Data[6]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "Parallel_Data[7]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[0]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[1]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[2]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[3]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[4]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[5]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[6]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[7]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[8]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[9]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[10]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[11]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[12]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[13]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[14]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[15]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[16]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[17]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[18]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[19]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[20]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[21]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[22]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[23]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[24]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[25]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[26]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[27]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[28]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[29]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[30]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "stu_no[31]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[0]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[1]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[2]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[3]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[4]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[5]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[6]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[7]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[8]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[9]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[10]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[11]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[12]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[13]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[14]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[15]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[16]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[17]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[18]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[19]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[20]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[21]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[22]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[23]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[24]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[25]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[26]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[27]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[28]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[29]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[30]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "temp[31]" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "start_order" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "receive_order" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "WR1" at AD_DA.vhd(70)
+Info (10041): Inferred latch for "CS_1" at AD_DA.vhd(70)
 Info: Elaborating entity "ADC0832" for hierarchy "ADC0832:u1"
 Warning (10492): VHDL Process Statement warning at ADC0832.vhd(69): signal "DI1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Warning (10492): VHDL Process Statement warning at ADC0832.vhd(70): signal "DI0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
@@ -490,30 +489,30 @@ Info (10041): Inferred latch for "DI0" at ADC0832.vhd(45)
 Info (10041): Inferred latch for "DI1" at ADC0832.vhd(45)
 Info (10041): Inferred latch for "output_order" at ADC0832.vhd(45)
 Info: Duplicate LATCH primitives merged into single LATCH primitive
-    Info: Duplicate LATCH primitive "Parallel_Data[31]$latch" merged with LATCH primitive "Parallel_Data[7]$latch"
-    Info: Duplicate LATCH primitive "Parallel_Data[30]$latch" merged with LATCH primitive "Parallel_Data[7]$latch"
-    Info: Duplicate LATCH primitive "Parallel_Data[29]$latch" merged with LATCH primitive "Parallel_Data[7]$latch"
-    Info: Duplicate LATCH primitive "Parallel_Data[28]$latch" merged with LATCH primitive "Parallel_Data[7]$latch"
-    Info: Duplicate LATCH primitive "Parallel_Data[27]$latch" merged with LATCH primitive "Parallel_Data[7]$latch"
-    Info: Duplicate LATCH primitive "Parallel_Data[26]$latch" merged with LATCH primitive "Parallel_Data[7]$latch"
-    Info: Duplicate LATCH primitive "Parallel_Data[25]$latch" merged with LATCH primitive "Parallel_Data[7]$latch"
-    Info: Duplicate LATCH primitive "Parallel_Data[24]$latch" merged with LATCH primitive "Parallel_Data[7]$latch"
-    Info: Duplicate LATCH primitive "Parallel_Data[23]$latch" merged with LATCH primitive "Parallel_Data[7]$latch"
-    Info: Duplicate LATCH primitive "Parallel_Data[22]$latch" merged with LATCH primitive "Parallel_Data[7]$latch"
-    Info: Duplicate LATCH primitive "Parallel_Data[21]$latch" merged with LATCH primitive "Parallel_Data[7]$latch"
-    Info: Duplicate LATCH primitive "Parallel_Data[20]$latch" merged with LATCH primitive "Parallel_Data[7]$latch"
-    Info: Duplicate LATCH primitive "Parallel_Data[19]$latch" merged with LATCH primitive "Parallel_Data[7]$latch"
-    Info: Duplicate LATCH primitive "Parallel_Data[18]$latch" merged with LATCH primitive "Parallel_Data[7]$latch"
-    Info: Duplicate LATCH primitive "Parallel_Data[17]$latch" merged with LATCH primitive "Parallel_Data[7]$latch"
-    Info: Duplicate LATCH primitive "Parallel_Data[16]$latch" merged with LATCH primitive "Parallel_Data[7]$latch"
-    Info: Duplicate LATCH primitive "Parallel_Data[15]$latch" merged with LATCH primitive "Parallel_Data[7]$latch"
-    Info: Duplicate LATCH primitive "Parallel_Data[14]$latch" merged with LATCH primitive "Parallel_Data[7]$latch"
-    Info: Duplicate LATCH primitive "Parallel_Data[13]$latch" merged with LATCH primitive "Parallel_Data[7]$latch"
-    Info: Duplicate LATCH primitive "Parallel_Data[12]$latch" merged with LATCH primitive "Parallel_Data[7]$latch"
-    Info: Duplicate LATCH primitive "Parallel_Data[11]$latch" merged with LATCH primitive "Parallel_Data[7]$latch"
-    Info: Duplicate LATCH primitive "Parallel_Data[10]$latch" merged with LATCH primitive "Parallel_Data[7]$latch"
-    Info: Duplicate LATCH primitive "Parallel_Data[9]$latch" merged with LATCH primitive "Parallel_Data[7]$latch"
-    Info: Duplicate LATCH primitive "Parallel_Data[8]$latch" merged with LATCH primitive "Parallel_Data[7]$latch"
+    Info: Duplicate LATCH primitive "stu_no[31]$latch" merged with LATCH primitive "stu_no[7]$latch"
+    Info: Duplicate LATCH primitive "stu_no[30]$latch" merged with LATCH primitive "stu_no[7]$latch"
+    Info: Duplicate LATCH primitive "stu_no[29]$latch" merged with LATCH primitive "stu_no[7]$latch"
+    Info: Duplicate LATCH primitive "stu_no[28]$latch" merged with LATCH primitive "stu_no[7]$latch"
+    Info: Duplicate LATCH primitive "stu_no[27]$latch" merged with LATCH primitive "stu_no[7]$latch"
+    Info: Duplicate LATCH primitive "stu_no[26]$latch" merged with LATCH primitive "stu_no[7]$latch"
+    Info: Duplicate LATCH primitive "stu_no[25]$latch" merged with LATCH primitive "stu_no[7]$latch"
+    Info: Duplicate LATCH primitive "stu_no[24]$latch" merged with LATCH primitive "stu_no[7]$latch"
+    Info: Duplicate LATCH primitive "stu_no[23]$latch" merged with LATCH primitive "stu_no[7]$latch"
+    Info: Duplicate LATCH primitive "stu_no[22]$latch" merged with LATCH primitive "stu_no[7]$latch"
+    Info: Duplicate LATCH primitive "stu_no[21]$latch" merged with LATCH primitive "stu_no[7]$latch"
+    Info: Duplicate LATCH primitive "stu_no[20]$latch" merged with LATCH primitive "stu_no[7]$latch"
+    Info: Duplicate LATCH primitive "stu_no[19]$latch" merged with LATCH primitive "stu_no[7]$latch"
+    Info: Duplicate LATCH primitive "stu_no[18]$latch" merged with LATCH primitive "stu_no[7]$latch"
+    Info: Duplicate LATCH primitive "stu_no[17]$latch" merged with LATCH primitive "stu_no[7]$latch"
+    Info: Duplicate LATCH primitive "stu_no[16]$latch" merged with LATCH primitive "stu_no[7]$latch"
+    Info: Duplicate LATCH primitive "stu_no[15]$latch" merged with LATCH primitive "stu_no[7]$latch"
+    Info: Duplicate LATCH primitive "stu_no[14]$latch" merged with LATCH primitive "stu_no[7]$latch"
+    Info: Duplicate LATCH primitive "stu_no[13]$latch" merged with LATCH primitive "stu_no[7]$latch"
+    Info: Duplicate LATCH primitive "stu_no[12]$latch" merged with LATCH primitive "stu_no[7]$latch"
+    Info: Duplicate LATCH primitive "stu_no[11]$latch" merged with LATCH primitive "stu_no[7]$latch"
+    Info: Duplicate LATCH primitive "stu_no[10]$latch" merged with LATCH primitive "stu_no[7]$latch"
+    Info: Duplicate LATCH primitive "stu_no[9]$latch" merged with LATCH primitive "stu_no[7]$latch"
+    Info: Duplicate LATCH primitive "stu_no[8]$latch" merged with LATCH primitive "stu_no[7]$latch"
 Warning: Latch WR1$latch has unsafe behavior
     Warning: Ports D and ENA on the latch are fed by the same signal current_state.DAC_START
 Warning: Latch start_order has unsafe behavior
@@ -536,38 +535,6 @@ Warning: Latch temp[7] has unsafe behavior
     Warning: Ports D and ENA on the latch are fed by the same signal DataA[7]
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "CS_output" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[0]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[1]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[2]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[3]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[4]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[5]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[6]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[7]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[8]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[9]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[10]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[11]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[12]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[13]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[14]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[15]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[16]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[17]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[18]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[19]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[20]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[21]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[22]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[23]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[24]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[25]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[26]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[27]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[28]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[29]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[30]" is stuck at GND
-    Warning (13410): Pin "COUNT3_output[31]" is stuck at GND
     Warning (13410): Pin "D[7]" is stuck at GND
     Warning (13410): Pin "XFER" is stuck at GND
     Warning (13410): Pin "WR2" is stuck at GND
@@ -620,14 +587,14 @@ Warning: Design contains 48 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "CH1_1[29]"
     Warning (15610): No output dependent on input pin "CH1_1[30]"
     Warning (15610): No output dependent on input pin "CH1_1[31]"
-Info: Implemented 530 device resources after synthesis - the final resource count might be different
+Info: Implemented 370 device resources after synthesis - the final resource count might be different
     Info: Implemented 65 input pins
-    Info: Implemented 194 output pins
-    Info: Implemented 271 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 141 warnings
+    Info: Implemented 66 output pins
+    Info: Implemented 239 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 108 warnings
     Info: Peak virtual memory: 261 megabytes
-    Info: Processing ended: Sat Oct 14 22:56:33 2017
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Processing ended: Sun Oct 15 14:23:41 2017
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:02
 
 

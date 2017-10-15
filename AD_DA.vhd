@@ -9,23 +9,17 @@ entity AD_DA is
 		clk_1 : in std_logic; --clock
 		CH0_1 : in integer; --analog data entrance
 		CH1_1 : in integer; --analog data entrance
-		--CS_1 : in std_logic; --CHIP Select
-		--DI_1 : in std_logic; --Data In
 		CS_output : out std_logic;
 		DI_output : out std_logic;
 		state_signal_1 : buffer std_logic_vector(3 downto 0); --state Out
 		
-		CLKNUM:buffer integer:=0;
 		DO_1 : buffer std_logic; --Data Out
 		
 		DataA_output: out std_logic_vector(7 downto 0);
 		DataB_output: out std_logic_vector(7 downto 0);
 		
-		COUNT1_output: out integer;
-		COUNT2_output: out integer;
-		COUNT3_output: out integer;
-		
-		Parallel_Data:buffer integer;
+	
+		stu_no:buffer integer;
 		
 		--port of DAC0832
 		D : out std_logic_vector(7 downto 0);
@@ -37,8 +31,6 @@ entity AD_DA is
 		);
 	signal DI_1 : std_logic:='0'; --Data In
 	signal CS_1 : std_logic:='1'; --CHIP Select
-	--signal CH0_1: integer:=12; --analog data entrance
-	--signal CH1_1 : integer:=16; --analog data entrance
 end AD_DA;
 
 architecture behavior of AD_DA is
@@ -61,7 +53,7 @@ architecture behavior of AD_DA is
 	signal receive_order:std_logic;
 	signal start_order:std_logic;
 	signal temp:integer;
-	signal Serial_Data:std_logic_vector(7 downto 0);
+	signal Parallel_Data:std_logic_vector(7 downto 0);
 	shared VARIABLE COUNT1:INTEGER:=0;
 	shared VARIABLE COUNT2:INTEGER:=0;
 	shared VARIABLE COUNT3:INTEGER:=0;
@@ -71,16 +63,16 @@ begin
 	counter : process(clk_1)
 	begin 
 		if(clk_1'event and clk_1 = '0') then
-			CLKNUM <= CLKNUM + 1;
 			current_state <= next_state;
 		end if;
 	end process;
 	
-	controller : process(CLKNUM,current_state)
+	controller : process(current_state)
 	begin
 		
 			case current_state is 
 				when IDLE =>
+					--init the signal
 					CS_1 <= '0';
 					WR1 <= '1';
 					receive_order <= '0';
@@ -88,6 +80,7 @@ begin
 					--DI_1 <= '0';
 					next_state <= ADC_START;					
 				when ADC_START => 
+					--send start order to ADC0832
 					if(COUNT2 < 4) then
 						start_order <= '1';
 						next_state <= ADC_START;
@@ -97,6 +90,7 @@ begin
 					end if;
 				
 				when DATA_RECEIVE =>
+					--receive data from ADC0832
 					if(COUNT1 < 15) then
 						receive_order <= '1';
 						next_state <= DATA_RECEIVE;
@@ -108,16 +102,17 @@ begin
 					--check if the data is correct
 					if(DataA = DataB) then
 						temp <= CONV_INTEGER(DataA);
-						Parallel_Data <= (255 - temp)/2;
+						stu_no <= (255 - temp)/2;
 						next_state <= DAC_START;
 					else
-						Parallel_Data <= -1;
+						stu_no <= -1;
 						
 						next_state <= DAC_START;
 					end if;
-					Serial_Data <= CONV_STD_LOGIC_VECTOR((255 - temp)/2,8);
+					Parallel_Data <= CONV_STD_LOGIC_VECTOR((255 - temp)/2,8);
 				when DAC_START =>
-					D <= Serial_Data;
+					--send start order to DAC0832
+					D <= Parallel_Data;
 					WR1 <= '0';
 					WR2 <= '0';
 					XFER <= '0';
@@ -128,12 +123,9 @@ begin
 			end case;
 			DataA_output <= DataA;
 			DataB_output <= DataB;
-			COUNT1_output <= COUNT1;
-			COUNT2_output <= COUNT2;
-			COUNT3_output <= COUNT3;
 			CS_output <= CS_1;
 			DI_output <= DI_1;
-			--Parallel_Data <= CONV_INTEGER(DataA); 
+			
 	end process;
 	
 	
@@ -144,17 +136,14 @@ begin
 			if(clk_1'event and clk_1 = '0') then
 					if(COUNT2 = 0) then
 						--START_BIT
-						--CS_1 <= '0';
 						DI_1 <= '1';
 					end if;
 					if(COUNT2 = 1) then
 						--First DI
-						--CS_1 <= '0';
 						DI_1 <= '0';
 					end if;
 					if(COUNT2 = 2) then
 						--Second DI
-						--CS_1 <= '0';
 						DI_1 <= '1';
 					end if;
 					if(COUNT2 = 3) then

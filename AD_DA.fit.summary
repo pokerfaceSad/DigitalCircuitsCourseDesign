@@ -1,11 +1,11 @@
-Fitter Status : Successful - Sat Oct 14 22:56:35 2017
+Fitter Status : Successful - Sun Oct 15 14:23:45 2017
 Quartus II Version : 9.1 Build 222 10/21/2009 SJ Full Version
 Revision Name : AD_DA
 Top-level Entity Name : AD_DA
 Family : MAX II
-Device : EPM2210F324A5
+Device : EPM570F256C3
 Timing Models : Final
-Total logic elements : 264 / 2,210 ( 12 % )
-Total pins : 259 / 272 ( 95 % )
+Total logic elements : 232 / 570 ( 41 % )
+Total pins : 131 / 160 ( 82 % )
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )
